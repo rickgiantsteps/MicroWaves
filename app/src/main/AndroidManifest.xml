@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appperlostudiodeltemperamento">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppPerLoStudioDelTemperamento">
+        <activity
+            android:name=".EDO7keyboard"
+            android:exported="false" />
+        <activity
+            android:name=".Shierlukeyboard"
+            android:exported="false" />
+        <activity
+            android:name=".BohlenPiercekeyboard"
+            android:exported="false" />
+        <activity
+            android:name=".Alphakeyboard"
+            android:exported="false" />
+        <activity
+            android:name=".EDO12keyboard"
+            android:exported="false" />
+        <activity
+            android:name=".EDO22keyboard"
+            android:exported="false" />
+        <activity
+            android:name=".Pitagorakeyboard"
+            android:exported="false" />
+        <activity
+            android:name=".Zarlinokeyboard"
+            android:exported="false" />
+        <activity
+            android:name=".nontemperate_dettaglio"
+            android:exported="false"
+            android:label="@string/title_activity_nontemperate_dettaglio"
+            android:theme="@style/Theme.AppPerLoStudioDelTemperamento.NoActionBar" />
+        <activity
+            android:name=".temperate_dettaglio"
+            android:exported="false"
+            android:label="@string/title_activity_temperate_dettaglio"
+            android:theme="@style/Theme.AppPerLoStudioDelTemperamento.NoActionBar" />
+        <activity
+            android:name=".scale_non_temperate"
+            android:exported="false" />
+        <activity
+            android:name=".scale_temperate"
+            android:exported="false" />
+        <activity
+            android:name=".scaleSelection"
+            android:exported="false" />
+        <activity
+            android:name=".EDO11keyboard"
+            android:exported="false" />
+        <activity
+            android:name=".TeoriaMicrotonale"
+            android:exported="false" />
+        <activity
+            android:name=".EDO24keyboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

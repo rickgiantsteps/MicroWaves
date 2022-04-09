@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.121" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/drawable/border.xml" value="0.2265" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/drawable/borderedbutton.xml" value="0.2265" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/drawable/ic_94051.xml" value="0.16" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/drawable/ic__94051.xml" value="0.16" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/drawable/ic__95796.xml" value="0.1825" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/drawable/splash_image.xml" value="0.121" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/layout/activity_edo24keyboard.xml" value="0.536" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/layout/activity_main.xml" value="0.6" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/layout/activity_teoria_microtonale.xml" value="0.2" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.121" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_edo11keyboard.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_edo12keyboard.xml" value="0.4" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_edo22keyboard.xml" value="0.41898148148148145" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_edo24keyboard.xml" value="0.1897644927536232" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_edo6keyboard.xml" value="0.6" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_edo6scale.xml" value="0.19701086956521738" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_naturale_zarlinokeyboard.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_nontemperate_dettaglio.xml" value="0.1897644927536232" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_pitagorakeyboard.xml" value="0.25" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_scale_non_temperate.xml" value="0.1897644927536232" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_scale_selection.xml" value="0.25" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_scale_temperate.xml" value="0.1897644927536232" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_temperate_dettaglio.xml" value="0.1897644927536232" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_teoria_microtonale.xml" value="0.25" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/activity_zarlinokeyboard.xml" value="0.4" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/fragment_nontemperate_dettaglio.xml" value="0.1897644927536232" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/fragment_temperate_dettaglio.xml" value="0.1897644927536232" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV4/app/src/main/res/layout/recyclerview_row.xml" value="0.25" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_alphakeyboard.xml" value="0.536" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_bohlen_piercekeyboard.xml" value="0.25" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_edo11keyboard.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_edo12keyboard.xml" value="0.4" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_edo22keyboard.xml" value="0.4" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_edo24keyboard.xml" value="0.4" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_edo6keyboard.xml" value="0.6" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_main.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_nontemperate_dettaglio.xml" value="0.2" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_pitagorakeyboard.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_scale_non_temperate.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_scale_temperate.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_shierlukeyboard.xml" value="0.25" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_temperate_dettaglio.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_teoria_microtonale.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/activity_zarlinokeyboard.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/fragment_nontemperate_dettaglio.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/fragment_temperate_dettaglio.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV5/app/src/main/res/layout/recyclerview_row.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/drawable/ic__95796.xml" value="0.1005" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/drawable/ic_logo_universit__degli_studi_di_milano.xml" value="0.201" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/drawable/ic_logo_universit__degli_studi_di_milano_svg.xml" value="0.201" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/drawable/splash_image.xml" value="0.1005" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_alphakeyboard.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_bohlen_piercekeyboard.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_edo11keyboard.xml" value="0.14634146341463414" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_edo12keyboard.xml" value="0.14634146341463414" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_edo22keyboard.xml" value="0.4" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_edo24keyboard.xml" value="0.536" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_edo7keyboard.xml" value="0.14634146341463414" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_nontemperate_dettaglio.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_pitagorakeyboard.xml" value="0.11070110701107011" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_scale_non_temperate.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_scale_temperate.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_shierlukeyboard.xml" value="0.15463917525773196" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_temperate_dettaglio.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_teoria_microtonale.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/activity_zarlinokeyboard.xml" value="0.15463917525773196" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_alpha.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_b_p.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_e_d_o11.xml" value="0.1" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_e_d_o12.xml" value="0.1507537688442211" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_e_d_o22.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_e_d_o24.xml" value="0.13513513513513514" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_e_d_o7.xml" value="0.1" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_nontemperate_dettaglio.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_pitagora.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_shierlu.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/fragment_zarlino.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/AppperlostudiodeltemperamentoV6/app/src/main/res/layout/recyclerview_row.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento_2.0/app/src/main/res/layout/activity_edo24keyboard.xml" value="0.6" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento_3.0/app/src/main/res/layout/activity_edo11keyboard.xml" value="0.536" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento_3.0/app/src/main/res/layout/activity_edo24keyboard.xml" value="0.25" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento_3.0/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento_3.0/app/src/main/res/layout/activity_scale_selection.xml" value="0.1" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento_3.0/app/src/main/res/layout/activity_teoria_microtonale.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento_3.0/app/src/main/res/layout/drawer_n_activity.xml" value="0.25" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento_3.0/app/src/main/res/layout/layout_list_scales.xml" value="0.176" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/Appperlostudiodeltemperamento_3.0/app/src/main/res/layout/recyclerview_row.xml" value="0.536" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

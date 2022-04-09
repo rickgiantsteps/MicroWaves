@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">MicroWaves</string>
+    <string name="app_description">An app for the exploration of\nmicrotonal tunings</string>
+    <string name="app_author">Riccardo Passoni\nLIM (Music Informatics Laboratory)</string>
+    <string name="volume">Volume</string>
+    <string name="duratatono">Tone duration</string>
+    <string name="waveform">Wave type</string>
+    <string name="edo24">24-EDO</string>
+    <string name="edo11">11-EDO</string>
+    <string name="edo12">12-EDO</string>
+    <string name="edo7">7-EDO</string>
+    <string name="edo22">22-EDO</string>
+    <string name="alpha">Alpha scale</string>
+    <string name="scalazarlino">Syntonous diatonic scale</string>
+    <string name="scalapitagora">Pythagorean tuning</string>
+    <string name="bohlenpierce">Bohlen–Pierce scale</string>
+    <string name="shierlu">Shí-èr-lǜ scale</string>
+    <string name="hz">Hz</string>
+    <string name="a4">A4:</string>
+    <string name="ottava">Octave:</string>
+    <string name="quintanumero">Fifth:</string>
+    <string name="trittava">Tritave:</string>
+    <string name="spiegazionetemperate">Equal temperament is a tuning system that divides the octave into equal steps.
+    \nThis is achieved by selecting a starting frequency for the octave, choosing the desired number of octave subdivisions then multiplying the central frequency by n-th root of 2 (octave) n times: this will result in a set of frequencies that divides the octave into n equally spaced notes.
+    \nThe most commonly used equally tempered system is 12-EDO, more commonly known as twelve-tone equal temperament.
+    \nThe octave can be divided into any amount of steps, for example 24-EDO is commonly used in Arabic music.
+    \nSome scales subdivide different intervals (Alpha scale, Bohlen-Pierce scale): these can be considered equally tempered but they\'re not present in this section (not EDO).
+    \n\nClick the button to have more information on the scales present in the app:</string>
+    <string name="spiegazionenontemperate">Non EDO tunings comprise all the systems that don\'t subdivide the octave into equal steps, by using different approaches to build a set of frequency to compose music with.
+        \n\nThey can be justly tuned, meaning all the ratios between the notes can be represented with rational numbers, they can be tempered, meaning the intervals of JI are slightly wider/narrower to meet certain requirements, and so on.
+        \n\nIn this app the non EDO tunings presents range from historical justly intonated tunings like the Pythagorean, Shí-èr-lǜ and five-limit tuning (Zarlinian scale), to more experimental tunings like Wendy Carlos\' Alpha scale and the Bohlen-Pierce scale.
+        \n\n\nClick the button to have more information on the scales present in the app:</string>
+    <string name="scalesindetail">Scales in detail</string>
+    <string name="spiegazione">Microtonal\ntheory</string>
+    <string name="spiegazione11">11edo (or 11tet) is a tuning system that divides the octave into 11 equal parts (each step is approximately equivalent to 109.09 cents).
+    \nIt\'s classified as a \"prime EDO\".</string>
+    <string name="spiegazione24">24edo (or 24tet) is a tuning system that divides the octave into 24 equal parts of 50 cents each.
+     It is also known as quarter-tone tuning, since it divides the semitone used in 12edo into two.</string>
+    <string name="spiegazione12">Twelve tone equal temperament (12tet or 12edo) is the predominant tuning system in the western world.
+     It divides the octave into 12 equal parts, each consisting of 100 cents.</string>
+    <string name="spiegazione7">7edo (or 7tet) is a tuning system that divides the octave into 7 equal parts (each step is approximately equivalent to 171.4 cents).
+    It\'s used in many cultures in Africa, for example it\'s the system used to tune the Balafon, a traditional percussive instrument.</string>
+    <string name="spiegazione22">22edo (or 22tet) is a tuning system that divides the octave into 22 equal parts.
+     \nIt can be considered as an approximation of the Indian shruti system, since it doesn\'t have a set size for the shruti (steps) and it divides the octave into 22 steps.</string>
+    <string name="spiegazionealpha">The alpha scale is a non octave repeating system which can be approximated by dividing a perfect fifth interval into 9 equal steps.
+    It was invented by american electronic music composer and musician Wendy Carlos.</string>
+    <string name="spiegazionePitagorica">The pythagorean scale was invented in ancient Greece, it\'s generally attributed to the famous mathematician Pythagoras.
+    \nIt\'s entirely based on the 3:2 ratio, equivalent to the perfect fifth interval, and the octave (2:1).</string>
+    <string name="spiegazioneZarlino">Ptolemy\'s intense diatonic scale, was first theorised by the greek mathematician Ptolemy and later formalized by italian music theorist Zarlino.
+    It constructs the scale by using three intervals: the greater tone (9:8), the lesser tone (10:9), and the just diatonic semitone (16:15).</string>
+    <string name="spiegazioneBP">The Bohlen–Pierce scale is a tuning based on the division of the \"tritave\" (equivalent to a 3:1 ratio) instead of the usual octave (2:1 ratio).
+    It can also be approximated to a justly intonated version, meaning each interval can be represented by a rational number.</string>
+    <string name="spiegazioneShierlu">Shi-er-lu was a standard set of notes used in ancient chinese music theory. The first standardization of its pitches was written down during the 2nd century AD.
+    It\'s constructed using solely powers of the perfect fifth (3:2, akin to the pythagorean tuning).</string>
+    <string name="keyboard">Microtonal\nkeyboards</string>
+    <string name="microtoni">Microtonal music or microtonality is the use of intervals smaller than a semitone (smaller musical interval used in western music, also known as a \"half tone\") in music.
+    Sometimes the meaning is extended to cover any type of musical system that uses different intervals from the one used in 12EDO (the temperament used in most of the western world).
+    \nMusical tunings can divide the octave equally or they can use different intervals to create the desired tuning. \nEqually temperate systems (also called n-EDO, equal division of the octave, or n-TET, tone equal temperament) divide the octave into \"n\" equal parts: each interval between the notes at the musician\'s disposal is the same.
+    \nNon EDO systems divide the octave into different intervals, depending on the desired qualities of the tuning.</string>
+    <string name="title_activity_temperate_dettaglio">temperate_detail</string>
+    <string name="tab_text_1">12EDO</string>
+    <string name="tab_text_2">24EDO</string>
+    <string name="tab_text_3">22EDO</string>
+    <string name="tab_text_4">11EDO</string>
+    <string name="tab_text_5">7EDO</string>
+    <string name="tab_text_6">Pythagorean</string>
+    <string name="tab_text_7">Ptolemaic</string>
+    <string name="tab_text_8">Alpha</string>
+    <string name="tab_text_9">Bohlen-Pierce</string>
+    <string name="tab_text_10">Shí-èr-lǜ</string>
+    <string name="title_activity_nontemperate_dettaglio">nontemperate_detail</string>
+    <string name="detailed12edo">\n12EDO, or as it is more commonly known Twelve-tone equal temperament, is the most common tuning system in the western world.
+        \n\nIt is constructed by dividing the octave into 12 equal steps, each step is exactly 100 cents. Since it\'s an equally tempered system the ratio between each consecutive note is a twelfth root of two (≈ 1.05946).
+    \n\nIt was first formalized in europe during the 18th century by Andreas Werckmeister but it was theorised both in ancient China and Greece
+    \n\n\nSome examples of compositions in 12EDO:\n<a href="https://www.youtube.com/watch?v=bT7Hj-ea0VE">Bob Dylan - All Along the Watchtower</a>\n<a href="https://www.youtube.com/watch?v=qrO4YZeyl0I">Lady Gaga - Bad Romance</a>\n<a href="https://www.youtube.com/watch?v=VeTFxbsVGrI">Schoenberg: Drei Klavierstücke, Op. 11</a>\n<a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ">Queen – Bohemian Rhapsody</a></string>
+    <string name="detailed24edo">\n24EDO, also known as the quarter-tone scale (since it divides the more common 12EDO system\'s intervals in half), is an equal temperament system that divides the octave into 24 equal parts.
+                \n\nEach of the 24 steps is exactly 50 cents (half of 12EDO\'s intervals). Since it\'s an equally tempered system the ratio between each consecutive note is a twenty-fourth root of two  (≈ 1.0293).
+    \n\nIt retains many of the harmonic qualities of twelve tone equal temperament (since it\'s a substet of 24EDO) and it\'s commonly used in arabic compositions and music theory.
+    \n\n\nSome examples of compositions in 24EDO:\n<a href="https://www.youtube.com/watch?v=Q-i1XZc8ZwA">King Gizzard and The Lizard Wizard - Rattlesnake</a>\n<a href="https://www.youtube.com/watch?v=Uc5SL3isZJs">Luciano Berio - E vò</a>\n<a href="https://www.youtube.com/watch?v=r-Pld_6Q0N8">Umm Kulthum – Seret El Hob</a></string>
+    <string name="detailed22edo">\n22EDO is an equal temperament system that divides the octave into 22 equal parts.
+        \n\nEach of the 22 steps is exactly 54.54545 cents. Since it\'s an equally tempered scale the ratio between each consecutive note is a twenty-second root of two (≈ 1.03201).
+    \n\nInspired by India\'s musical theory, this subdivision was first proposed in Europe by Robert Bosanquet, who considered it an acceptable approximation of just intonation. It is not a \"meantone temperament\" since it doesn\'t temper out the syntonic comma (81/80).
+    \n\n\nSome examples of compositions in 22EDO:\n<a href="https://www.youtube.com/watch?v=l9wINwlgxRU">Sevish - Gleam</a>\n<a href="http://chrisvaisvil.com/22-edo-my-crazy-aunt-sophie/">Chris Vaisvil - My Crazy Aunt Sophie</a>\n<a href="https://www.youtube.com/watch?v=Qgb59snzMII">MÜÜR - Nenio reala</a></string>
+    <string name="detailed11edo">\n11EDO is an equal temperament system that divides the octave into 11 equal parts.
+        \n\nEach of the 11 steps is exactly 109.09091 cents. Since it\'s an equally tempered scale the ratio between each consecutive note is a eleventh root of two (≈ 1.06504).
+    \n\n11EDO is a prime EDO, meaning it divides the octave into a prime number of notes.
+    \n\n\n\nSome examples of compositions in 11EDO:\n<a href="https://www.youtube.com/watch?v=mWSBoPK_m4s">Chris Vaisvil - Eleven Birds</a>\n<a href="http://www.ozanyarman.com/files/music/Icicle_Caverns.mp3">Icicle Caverns - Ozan Yarman</a>\n<a href="https://www.youtube.com/watch?v=vXl3GN4qAWY">Koras – Dropping</a></string>
+    <string name="detailed7edo">\n7EDO is an equal temperament system that divides the octave into 7 equal parts.
+        \n\nEach of the 7 steps is exactly 171.429 cents. Since it\'s an equally tempered scale the ratio between each consecutive note is a seventh root of two (≈ 1.10409).
+    \n\n7 EDO is a prime EDO, meaning it divides the octave into a prime number of notes.\nIt\'s used in Thai music to tune pentatonic scales and many african instruments, like the Balafon, use this tuning system.
+    \n\n\nSome examples of compositions in 7EDO:\n<a href="https://www.youtube.com/watch?v=fqN16ZgZlNQ">hideya - Like KoB</a>\n<a href="https://www.youtube.com/watch?v=VeTFxbsVGrI">Sevish - Fuschiamarine</a>\n<a href="http://www.uvnitr.cz/flaoyg/flao_yg/kelt.mp3">Milan Guštar – Kelt</a></string>
+    <string name="detailedZarlino">\nThe syntonous diatonic scale, also known as Ptolemy\'s intense diatonic scale or zarlinian scale, is a tuning system proposed by roman mathematician Ptolemy and later formalized during the renaissance by Zarlino.
+        \n\nIt is constructed by using three different intervals: the greater tone (9:8), the lesser tone (10:9) and the just diatonic semitone (16:15).
+    \n\nCompared to the Pythagorean tuning, while they both provide perfect fifths, the thirds in the Ptolemaic systems are much more consonant, making it more suitable for writing triads.
+    \n\nSome examples of compositions in the syntonous diatonic scale:\n<a href="https://www.youtube.com/watch?v=Iu82aN0ZXOE">Sean Hayward - Exploration #1 in Ptolemy\'s Equable Diatonic</a>\n<a href="https://www.youtube.com/watch?v=NJcZXbHetvo">Sean Hayward - Exploration #2 in Ptolemy\'s Equable Diatonic</a></string>
+    <string name="detailedPitagora">\nPythagorean tuning was first used in ancient Greece and it is mainly attributed to mathematician and philosopher Pythagoras, it was first used in the sixth century BC.
+        \n\nIt is constructed by using only two ratios: the perfect fifth (3:2) and the octave (2:1).\nEach note is calculated by stacking perfect fifths and by halving the resulting note by two if its frequency exceeds the octave.
+    \n\nThe fifths in this tuning system are perfectly consonant (since they all have a 3:2 ratio) but the thirds sound harsh and dissonant (having more complex ratios of 81:64 and 32:27 for major and minor intervals respectively).
+    \n\n\nSome examples of compositions in the pythagorean tuning:\n<a href="https://www.youtube.com/watch?v=JxNgd-kn5go">Lou Harrison - Sonata in Ishartum</a>\n<a href="https://www.youtube.com/watch?v=SSF04YuVAro">Bragod - Dyfaliad Crwth</a></string>
+    <string name="detailedAlpha">\nThe alpha scale is a non octave repeating scale that was created by electronic musician and composer Wendy Carlos.
+        \n\nIt can be considered a non octave equal temperament system with a 77.964990 cents step size.\nThis means that each octave will contain exactly 15.391524 equal steps. Furthermore this means that the fifth is subdivided into 9.003464 equal steps, so an equal division of the fifth into 9 equal steps would be a very accurate representation of this tuning system.
+    \n\n\nSome examples of compositions in the alpha scale:\nWendy Carlos - Invitation (unavailable for streaming)\n<a href="http://www.seraph.it/dep/det/FuzzyLogic.mp3">Fuzzy Logic - Carlos Serafini</a>\n<a href="https://www.youtube.com/watch?v=7uRvc4cwgBY">Sevish - Lavander Fields</a></string>
+    <string name="detailedBP">\nThe Bohlen-Pierce scale is a musical tuning system that was independently discovered by Heinz Bohlen, Kees van Prooijen and John Pierce.
+        \n\nUnlike most other tuning systems that base themselves on the octave, Bohlen-Pierce is based on the "tritave", an interval ratio of 3:1. It divides the tritave into 13 equal steps (this is considered the standard version, even though there is also a less used justly tuned version).
+    \n\nIt was first formalized by microwave engineer Heinz Bohlen in 1984.
+    \n\n\nSome examples of compositions in the Bohlen-Pierce scale:\n<a href="ziaspace.com/ZIA/mp3s/StickMen.mp3">Elaine Walker - Stick Men</a>\n<a href="https://www.youtube.com/watch?v=VRWrdtfCT4Y">Stefaan Himpe - Between Secrets</a>\n<a href="https://www.youtube.com/watch?v=sd1b9Lh8iFA">Kjell Hansen - Bohlen-Pierce Canon</a>\n<a href="http://www.kunstmusik.com/mp3/reminiscences.mp3">Steven Yi - Reminiscences</a></string>
+    <string name="detailedShierlu">\nShí-èr-lǜ is a standard set of 12 notes that was used in ancient Cina.\nIt is entirely based on the perfect fifth interval (3:2), meaning it\'s based on the same ratio of the Pythagorean tuning system.
+        \n\nEven if it only uses the perfect fifth to construct the set of frequencies it has different steps when compared to the Pythagorean ones.
+    \n\nThe concept of a set of pitches was first theorised in 600 BC and the actual pitches were first formalized in 240 CE.
+    \n\n\nExample of a composition using notes from Shí-èr-lǜ:\n\n<a href="https://www.youtube.com/watch?v=zlh25zKrBZY">少見的版本 - 俞遜發笛子獨奏</a></string>
+
+</resources>
