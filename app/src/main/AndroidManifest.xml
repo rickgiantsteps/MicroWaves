@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppPerLoStudioDelTemperamento">
         <activity
+            android:name=".nEDOkeyboard"
+            android:exported="false" />
+        <activity
             android:name=".EDO7keyboard"
             android:exported="false" />
         <activity
