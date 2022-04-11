@@ -98,7 +98,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
                                 toast.cancel();
                             }
                         },
-                        1000
+                        1500
                 );
             }
 

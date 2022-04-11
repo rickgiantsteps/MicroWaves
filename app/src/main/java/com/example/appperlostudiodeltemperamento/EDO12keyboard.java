@@ -99,7 +99,7 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
                                 toast.cancel();
                             }
                         },
-                        1000
+                        1500
                 );
             }
 

@@ -89,7 +89,7 @@ public class Pitagorakeyboard extends AppCompatActivity implements View.OnTouchL
                                 toast.cancel();
                             }
                         },
-                        1000
+                        1500
                 );
             }
 

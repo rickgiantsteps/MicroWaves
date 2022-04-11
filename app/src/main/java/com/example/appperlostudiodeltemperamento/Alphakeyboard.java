@@ -93,7 +93,7 @@ public class Alphakeyboard extends AppCompatActivity implements View.OnTouchList
                                 toast.cancel();
                             }
                         },
-                        1000
+                        1500
                 );
             }
 

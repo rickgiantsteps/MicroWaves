@@ -89,7 +89,7 @@ public class Zarlinokeyboard extends AppCompatActivity implements View.OnTouchLi
                                 toast.cancel();
                             }
                         },
-                        1000
+                        1500
                 );
             }
 

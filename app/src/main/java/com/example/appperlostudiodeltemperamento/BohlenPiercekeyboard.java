@@ -100,7 +100,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
                                 toast.cancel();
                             }
                         },
-                        1000
+                        1500
                 );
             }
 
