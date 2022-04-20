@@ -91,11 +91,9 @@ public class soundgenerator {
         //        AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT,
         //        count * (Short.SIZE / 8), AudioTrack.MODE_STATIC);
 
-        //this should make a continuous tone when a button is pressed
-        //track.setLoopPoints(0, track.getBufferSizeInFrames(), -1);
 
         //new audio track builder
-        AudioTrack track = new AudioTrack.Builder()
+       AudioTrack track = new AudioTrack.Builder()
                 .setAudioAttributes(new AudioAttributes.Builder()
                         .setUsage(AudioAttributes.USAGE_MEDIA)
                         .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
@@ -106,7 +104,11 @@ public class soundgenerator {
                         .setChannelMask(AudioFormat.CHANNEL_OUT_STEREO)
                         .build())
                 .setBufferSizeInBytes(count * (Short.SIZE / 8))
+                .setTransferMode(AudioTrack.MODE_STATIC)
                 .build();
+
+        //this should make a continuous tone when a button is pressed
+        track.setLoopPoints(0, track.getBufferSizeInFrames(), -1);
 
         track.write(samples, 0, count);
         return track;
