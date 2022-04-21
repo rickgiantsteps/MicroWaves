@@ -25,6 +25,7 @@ public class scaleSelection extends AppCompatActivity implements MyRecyclerViewA
 
         // data to populate the RecyclerView with
         ArrayList<String> scaleNames = new ArrayList<>();
+        scaleNames.add("\nnEDO\n(Choose your own subdivision)\n");
         scaleNames.add("\n12EDO\n(Twelve-tone equal temperament)\n");
         scaleNames.add("\n24EDO\n(Quarter tone scale)\n");
         scaleNames.add("\n22EDO\n");
@@ -53,42 +54,46 @@ public class scaleSelection extends AppCompatActivity implements MyRecyclerViewA
         final Intent intent;
         switch (position){
             case 0:
-                intent =  new Intent(this, EDO12keyboard.class);
+                intent =  new Intent(this, nEDOkeyboard.class);
                 break;
 
             case 1:
-                intent =  new Intent(this, EDO24keyboard.class);
+                intent =  new Intent(this, EDO12keyboard.class);
                 break;
 
             case 2:
-                intent =  new Intent(this, EDO22keyboard.class);
+                intent =  new Intent(this, EDO24keyboard.class);
                 break;
 
             case 3:
-                intent =  new Intent(this, EDO11keyboard.class);
+                intent =  new Intent(this, EDO22keyboard.class);
                 break;
 
             case 4:
-                intent =  new Intent(this, EDO7keyboard.class);
+                intent =  new Intent(this, EDO11keyboard.class);
                 break;
 
             case 5:
-                intent =  new Intent(this, Pitagorakeyboard.class);
+                intent =  new Intent(this, EDO7keyboard.class);
                 break;
 
             case 6:
-                intent =  new Intent(this, Zarlinokeyboard.class);
+                intent =  new Intent(this, Pitagorakeyboard.class);
                 break;
 
             case 7:
-                intent =  new Intent(this, Alphakeyboard.class);
+                intent =  new Intent(this, Zarlinokeyboard.class);
                 break;
 
             case 8:
-                intent =  new Intent(this, BohlenPiercekeyboard.class);
+                intent =  new Intent(this, Alphakeyboard.class);
                 break;
 
             case 9:
+                intent =  new Intent(this, BohlenPiercekeyboard.class);
+                break;
+
+            case 10:
                 intent =  new Intent(this, Shierlukeyboard.class);
                 break;
 
