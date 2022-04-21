@@ -150,7 +150,7 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
             for (int k = 1; k <= nedo.getMaxValue(); k++) {
                 String buttonidstring = "buttonPlayNote" + k;
                 int buttonid = getResources().getIdentifier(buttonidstring, "id", getPackageName());
-                findViewById(buttonid).setBackgroundColor(getResources().getColor(R.color.purple_200));
+                findViewById(buttonid).setBackgroundColor(getResources().getColor(R.color.buttonblue));
             }
 
             for (int k = nedo.getMaxValue(); k > nedo.getValue(); k--) {
