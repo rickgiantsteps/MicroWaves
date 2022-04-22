@@ -22,10 +22,11 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
     private EditText a4frequency;
     private int wave = 0;
     private double volume = 1;
-    private int noteduration = 500;
     private double[] edo12;
     double a4 = 440;
     private NumberPicker octave;
+    private final AudioTrack[] tones = new AudioTrack[12];
+    //private Button[] buttons = new Button[12];
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -44,6 +45,10 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
             ottava = octave.getValue();
             edo12 = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
         });
+
+        /*for (int i = 0; i < 12; i++) {
+            String buttonName = "buttonPlayNote"+(i+1);
+        }*/
 
 
         Button buttonPlayNote1 = findViewById(R.id.buttonPlayNote1);
@@ -113,23 +118,7 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
 
             }
         });
-        SeekBar duration = findViewById(R.id.durataslider);
-        duration.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                noteduration = progress + 1;
-            }
 
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
         SeekBar volumeslider = findViewById(R.id.volumeslider);
         volumeslider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -167,199 +156,133 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
         });
     }
 
+    public void generateFreq(int tonenumber) {
+
+        tones[tonenumber] = soundgenerator.generateTone2(edo12[tonenumber],volume, wave, this);
+
+    }
+
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouch(View v, MotionEvent event) {
 
         if (v.getId() == R.id.buttonPlayNote1) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[0],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(0);
+                tones[0].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[0].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote2) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[1],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(1);
+                tones[1].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[1].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote3) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[2],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(2);
+                tones[2].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[2].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote4) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[3],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(3);
+                tones[3].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[3].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote5) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[4],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(4);
+                tones[4].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[4].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote6) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[5],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(5);
+                tones[5].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[5].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote7) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[6],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(6);
+                tones[6].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[6].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote8) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[7],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(7);
+                tones[7].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[7].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote9) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[8],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(8);
+                tones[8].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[8].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote10) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[9],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(9);
+                tones[9].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[9].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote11) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[10],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(10);
+                tones[10].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[10].release();
             }
         }
 
         if (v.getId() == R.id.buttonPlayNote12) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(edo12[11],noteduration,volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration+2
-                );
+                generateFreq(11);
+                tones[11].play();
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[11].release();
             }
         }
 

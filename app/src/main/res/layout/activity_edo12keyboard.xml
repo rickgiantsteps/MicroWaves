@@ -194,21 +194,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.76" />
 
-    <SeekBar
-        android:id="@+id/durataslider"
-        android:layout_width="282dp"
-        android:layout_height="35dp"
-        android:max="1000"
-        android:progress="500"
-        android:progressTint="#006bd1"
-        android:thumbTint="#006bd1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.806"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.849" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -275,19 +260,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.92" />
-
-    <TextView
-        android:id="@+id/durata"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/pt_sans"
-        android:text="@string/duratatono"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.039"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.841" />
 
     <SeekBar
         android:id="@+id/waveformslider"
