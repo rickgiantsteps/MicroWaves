@@ -25,8 +25,8 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
     private double[] edo12;
     double a4 = 440;
     private NumberPicker octave;
-    private final AudioTrack[] tones = new AudioTrack[12];
-    //private Button[] buttons = new Button[12];
+    private final AudioTrack[] tones = new AudioTrack[edonumber];
+    private final Button[] buttons = new Button[edonumber];
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -34,6 +34,13 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
         super.onCreate(savedInstanceState);
         setTheme(R.style.Theme_AppPerLoStudioDelTemperamento);
         setContentView(R.layout.activity_edo12keyboard);
+
+        for (int i = 0; i < 12; i++) {
+            String buttonName = "buttonPlayNote"+(i+1);
+            int buttonid = getResources().getIdentifier(buttonName, "id", getPackageName());
+            buttons[i] = findViewById(buttonid);
+            buttons[i].setOnTouchListener(this);
+        }
 
         edo12 = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
 
@@ -46,35 +53,6 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
             edo12 = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
         });
 
-        /*for (int i = 0; i < 12; i++) {
-            String buttonName = "buttonPlayNote"+(i+1);
-        }*/
-
-
-        Button buttonPlayNote1 = findViewById(R.id.buttonPlayNote1);
-        buttonPlayNote1.setOnTouchListener(this);
-        Button buttonPlayNote2 = findViewById(R.id.buttonPlayNote2);
-        buttonPlayNote2.setOnTouchListener(this);
-        Button buttonPlayNote3 = findViewById(R.id.buttonPlayNote3);
-        buttonPlayNote3.setOnTouchListener(this);
-        Button buttonPlayNote4 = findViewById(R.id.buttonPlayNote4);
-        buttonPlayNote4.setOnTouchListener(this);
-        Button buttonPlayNote5 = findViewById(R.id.buttonPlayNote5);
-        buttonPlayNote5.setOnTouchListener(this);
-        Button buttonPlayNote6 = findViewById(R.id.buttonPlayNote6);
-        buttonPlayNote6.setOnTouchListener(this);
-        Button buttonPlayNote7 = findViewById(R.id.buttonPlayNote7);
-        buttonPlayNote7.setOnTouchListener(this);
-        Button buttonPlayNote8 = findViewById(R.id.buttonPlayNote8);
-        buttonPlayNote8.setOnTouchListener(this);
-        Button buttonPlayNote9 = findViewById(R.id.buttonPlayNote9);
-        buttonPlayNote9.setOnTouchListener(this);
-        Button buttonPlayNote10 = findViewById(R.id.buttonPlayNote10);
-        buttonPlayNote10.setOnTouchListener(this);
-        Button buttonPlayNote11 = findViewById(R.id.buttonPlayNote11);
-        buttonPlayNote11.setOnTouchListener(this);
-        Button buttonPlayNote12 = findViewById(R.id.buttonPlayNote12);
-        buttonPlayNote12.setOnTouchListener(this);
         SeekBar waveformslider = findViewById(R.id.waveformslider);
         waveformslider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -166,6 +144,23 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
     @Override
     public boolean onTouch(View v, MotionEvent event) {
 
+        String toneid = v.getContext().getResources().getResourceName(v.getId());
+        int tone;
+
+        if (!Character.isDigit(toneid.charAt(toneid.length() - 2))) {
+            tone = Integer.parseInt(toneid.substring(toneid.length() - 1));
+        } else {
+            tone = Integer.parseInt(toneid.substring(toneid.length() - 2));
+        }
+
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            generateFreq(tone-1);
+            tones[tone-1].play();
+        }
+        if (event.getAction() == MotionEvent.ACTION_UP) {
+            tones[tone-1].release();
+        }
+/*
         if (v.getId() == R.id.buttonPlayNote1) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
                 generateFreq(0);
@@ -285,8 +280,9 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
                 tones[11].release();
             }
         }
-
+*/
         return false;
+
     }
 
 }
