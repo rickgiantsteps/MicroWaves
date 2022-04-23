@@ -1,7 +1,9 @@
 package com.example.appperlostudiodeltemperamento;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.annotation.SuppressLint;
 import android.media.AudioTrack;
 import android.os.Bundle;
 import android.text.Editable;
@@ -12,21 +14,28 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.SeekBar;
-import android.widget.Toast;
+import android.widget.TextView;
+
+import java.math.BigDecimal;
 
 public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListener {
 
-    int edonumber = 2;
+    int edonumber = 60;
     int ottava = 4;
     private EditText a4frequency;
     private NumberPicker nedo;
     private NumberPicker octave;
     private int wave = 0;
     private double volume = 1;
-    private int noteduration = 500;
     private double[] edo;
     double a4 = 440;
+    private final AudioTrack[] tones = new AudioTrack[edonumber];
+    private final Button[] buttons = new Button[edonumber];
+    String toneid;
+    String lastfreq;
 
+
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,50 +57,7 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 wave = progress;
-
-                Toast toast;
-
-                if (progress==0) {
-                    toast = Toast.makeText(nEDOkeyboard.this, "Wave chosen: sine", Toast.LENGTH_SHORT);
-                    toast.show();
-                } else if (progress==1) {
-                    toast = Toast.makeText(nEDOkeyboard.this, "Wave chosen: square", Toast.LENGTH_SHORT);
-                    toast.show();
-                } else if (progress==2) {
-                    toast = Toast.makeText(nEDOkeyboard.this, "Wave chosen: triangle", Toast.LENGTH_SHORT);
-                    toast.show();
-                } else {
-                    toast = Toast.makeText(nEDOkeyboard.this, "Wave chosen: saw", Toast.LENGTH_SHORT);
-                    toast.show();
-                }
-
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                toast.cancel();
-                            }
-                        },
-                        1000
-                );
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-        SeekBar duration = findViewById(R.id.durataslider);
-        duration.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                noteduration = progress + 1;
+                waveToast.waveinfo(progress, nEDOkeyboard.this);
             }
 
             @Override
@@ -123,40 +89,33 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
             }
         });
 
-        Button buttonPlayNote1 = findViewById(R.id.buttonPlayNote1);
-        buttonPlayNote1.setOnTouchListener(this);
-        Button buttonPlayNote2 = findViewById(R.id.buttonPlayNote2);
-        buttonPlayNote2.setOnTouchListener(this);
-        Button buttonPlayNote3 = findViewById(R.id.buttonPlayNote3);
-        buttonPlayNote3.setOnTouchListener(this);
-        Button buttonPlayNote4 = findViewById(R.id.buttonPlayNote4);
-        buttonPlayNote4.setOnTouchListener(this);
-        Button buttonPlayNote5 = findViewById(R.id.buttonPlayNote5);
-        buttonPlayNote5.setOnTouchListener(this);
-        Button buttonPlayNote6 = findViewById(R.id.buttonPlayNote6);
-        buttonPlayNote6.setOnTouchListener(this);
-        Button buttonPlayNote7 = findViewById(R.id.buttonPlayNote7);
-        buttonPlayNote7.setOnTouchListener(this);
-        Button buttonPlayNote8 = findViewById(R.id.buttonPlayNote8);
-        buttonPlayNote8.setOnTouchListener(this);
+        for (int i = 0; i < edonumber; i++) {
+            String buttonName = "buttonPlayNote"+(i+1);
+            int buttonid = getResources().getIdentifier(buttonName, "id", getPackageName());
+            buttons[i] = findViewById(buttonid);
+            buttons[i].setOnTouchListener(this);
+            buttons[i].setText(String.valueOf(i+1));
+            buttons[i].setTextSize(13);
+            buttons[i].setPadding(1,1,1,1);
+        }
 
 
         nedo = findViewById(R.id.nedo);
-        nedo.setMaxValue(8);
+        nedo.setMaxValue(edonumber);
         nedo.setMinValue(2);
-        nedo.setValue(2);
+        nedo.setValue(edonumber);
         nedo.setOnValueChangedListener((numberPicker, i, i1) -> {
 
             for (int k = 1; k <= nedo.getMaxValue(); k++) {
                 String buttonidstring = "buttonPlayNote" + k;
                 int buttonid = getResources().getIdentifier(buttonidstring, "id", getPackageName());
-                findViewById(buttonid).setBackgroundColor(getResources().getColor(R.color.buttonblue));
+                findViewById(buttonid).setBackgroundColor(ContextCompat.getColor(this, R.color.buttonblue));
             }
 
             for (int k = nedo.getMaxValue(); k > nedo.getValue(); k--) {
                 String buttonidstring = "buttonPlayNote" + k;
                 int buttonid = getResources().getIdentifier(buttonidstring, "id", getPackageName());
-                findViewById(buttonid).setBackgroundColor(getResources().getColor(R.color.dark_gray_bg));
+                findViewById(buttonid).setBackgroundColor(ContextCompat.getColor(this, R.color.dark_gray_bg));
             }
 
             edonumber = nedo.getValue();
@@ -166,7 +125,7 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
        for (int i = nedo.getMaxValue(); i > nedo.getValue() ; i--) {
             String buttonidstring = "buttonPlayNote" + i;
             int buttonid = getResources().getIdentifier(buttonidstring, "id", getPackageName());
-            findViewById(buttonid).setBackgroundColor(getResources().getColor(R.color.dark_gray_bg));
+            findViewById(buttonid).setBackgroundColor(ContextCompat.getColor(this, R.color.dark_gray_bg));
         }
 
         a4frequency = findViewById(R.id.a4frequency);
@@ -189,151 +148,32 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
 
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouch(View v, MotionEvent event) {
 
-        if (v.getId() == R.id.buttonPlayNote1) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                try {
-                    AudioTrack tone = soundgenerator.generateTone(edo[0], noteduration, volume, wave, this);
-                    tone.play();
-                    new java.util.Timer().schedule(
-                            new java.util.TimerTask() {
-                                @Override
-                                public void run() {
-                                    tone.release();
-                                }
-                            },
-                            noteduration + 2
-                    );
-                } catch (Exception e) {}
-            }
+        toneid = v.getContext().getResources().getResourceName(v.getId());
+        int tone;
+
+        if (!Character.isDigit(toneid.charAt(toneid.length() - 2))) {
+            tone = Integer.parseInt(toneid.substring(toneid.length() - 1));
+        } else {
+            tone = Integer.parseInt(toneid.substring(toneid.length() - 2));
         }
 
-        if (v.getId() == R.id.buttonPlayNote2) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                try {
-                    AudioTrack tone = soundgenerator.generateTone(edo[1], noteduration, volume, wave, this);
-                    tone.play();
-                    new java.util.Timer().schedule(
-                            new java.util.TimerTask() {
-                                @Override
-                                public void run() {
-                                    tone.release();
-                                }
-                            },
-                            noteduration + 2
-                    );
-                } catch (Exception e) {}
-            }
-        }
+        if (tone <= edonumber) {
 
-        if (v.getId() == R.id.buttonPlayNote3) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                try {
-                    AudioTrack tone = soundgenerator.generateTone(edo[2], noteduration, volume, wave, this);
-                    tone.play();
-                    new java.util.Timer().schedule(
-                            new java.util.TimerTask() {
-                                @Override
-                                public void run() {
-                                    tone.release();
-                                }
-                            },
-                            noteduration + 2
-                    );
-                } catch (Exception e) {}
+                tones[tone-1] = soundgenerator.generateTone2(edo[tone-1], volume, wave, this, tones, tone-1);
+                tones[tone-1].play();
+                lastfreq = BigDecimal.valueOf(edo[tone - 1]).setScale(4, BigDecimal.ROUND_FLOOR) + " Hz";
+                ((TextView)findViewById(R.id.lastfrequencytext)).setText(lastfreq);
             }
-        }
 
-        if (v.getId() == R.id.buttonPlayNote4) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                try {
-                    AudioTrack tone = soundgenerator.generateTone(edo[3], noteduration, volume, wave, this);
-                    tone.play();
-                    new java.util.Timer().schedule(
-                            new java.util.TimerTask() {
-                                @Override
-                                public void run() {
-                                    tone.release();
-                                }
-                            },
-                            noteduration + 2
-                    );
-                } catch (Exception e) {}
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                tones[tone-1].release();
             }
-        }
 
-        if (v.getId() == R.id.buttonPlayNote5) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                try {
-                    AudioTrack tone = soundgenerator.generateTone(edo[4], noteduration, volume, wave, this);
-                    tone.play();
-                    new java.util.Timer().schedule(
-                            new java.util.TimerTask() {
-                                @Override
-                                public void run() {
-                                    tone.release();
-                                }
-                            },
-                            noteduration + 2
-                    );
-                } catch (Exception e) {}
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote6) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                try {
-                    AudioTrack tone = soundgenerator.generateTone(edo[5], noteduration, volume, wave, this);
-                    tone.play();
-                    new java.util.Timer().schedule(
-                            new java.util.TimerTask() {
-                                @Override
-                                public void run() {
-                                    tone.release();
-                                }
-                            },
-                            noteduration + 2
-                    );
-                } catch (Exception e) {}
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote7) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                try {
-                    AudioTrack tone = soundgenerator.generateTone(edo[6], noteduration, volume, wave, this);
-                    tone.play();
-                    new java.util.Timer().schedule(
-                            new java.util.TimerTask() {
-                                @Override
-                                public void run() {
-                                    tone.release();
-                                }
-                            },
-                            noteduration + 2
-                    );
-                } catch (Exception e) {}
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote8) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                try {
-                    AudioTrack tone = soundgenerator.generateTone(edo[7], noteduration, volume, wave, this);
-                    tone.play();
-                    new java.util.Timer().schedule(
-                            new java.util.TimerTask() {
-                                @Override
-                                public void run() {
-                                    tone.release();
-                                }
-                            },
-                            noteduration + 2
-                    );
-                } catch (Exception e) {}
-            }
         }
 
         return false;
