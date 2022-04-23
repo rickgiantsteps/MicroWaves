@@ -111,7 +111,7 @@ public class soundgenerator {
         return track;
     }
 
-    static AudioTrack generateTone2(double freq, double volume, int wave, Context context)
+    static AudioTrack generateTone2(double freq, double volume, int wave, Context context, AudioTrack[] tones, int tonenumber)
     {
 
         Toast toast;
@@ -134,7 +134,7 @@ public class soundgenerator {
             );
         }
 
-        int durationmillsec = 10000;
+        int durationmillsec = 5000;
 
         if (volume > 1 || volume < 0){
             volume = 1; //max volume = 1 regardless of input
@@ -148,6 +148,7 @@ public class soundgenerator {
             double sinewave = Math.sin(2 * Math.PI * i / (44100.0 * 2.0 / freq));
 
             if (wave == 0){
+                //sine wave
                 short sample = (short)((volume * sinewave) * 0x7FFF);
                 //makes a stereo signal
                 samples[i] = sample;
@@ -185,14 +186,6 @@ public class soundgenerator {
 
         }
 
-        //this audio track builder is deprecated, trying the new one
-
-        //AudioTrack track = new AudioTrack(AudioManager.STREAM_MUSIC, 44100,
-        //        AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT,
-        //        count * (Short.SIZE / 8), AudioTrack.MODE_STATIC);
-
-
-        //new audio track builder
         AudioTrack track = new AudioTrack.Builder()
                 .setAudioAttributes(new AudioAttributes.Builder()
                         .setUsage(AudioAttributes.USAGE_MEDIA)
@@ -207,11 +200,12 @@ public class soundgenerator {
                 .setTransferMode(AudioTrack.MODE_STATIC)
                 .build();
 
-        //this should make a continuous tone when a button is pressed
         track.setLoopPoints(0, track.getBufferSizeInFrames(), -1);
 
         track.write(samples, 0, count);
-        return track;
+
+        tones[tonenumber] =  track;
+        return tones[tonenumber];
     }
 
 }

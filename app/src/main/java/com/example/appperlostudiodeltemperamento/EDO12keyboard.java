@@ -13,7 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.SeekBar;
-import android.widget.Toast;
+import android.widget.TextView;
+
+import java.math.BigDecimal;
 
 public class EDO12keyboard extends AppCompatActivity implements View.OnTouchListener {
 
@@ -27,6 +29,8 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
     private NumberPicker octave;
     private final AudioTrack[] tones = new AudioTrack[edonumber];
     private final Button[] buttons = new Button[edonumber];
+    String toneid;
+    String lastfreq;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -41,6 +45,11 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
             buttons[i] = findViewById(buttonid);
             buttons[i].setOnTouchListener(this);
         }
+
+        /*
+        Button buttonPlayNote1 = findViewById(R.id.buttonPlayNote1);
+        buttonPlayNote1.setOnTouchListener(this);
+         */
 
         edo12 = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
 
@@ -58,93 +67,59 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 wave = progress;
-
-                Toast toast;
-
-                if (progress==0) {
-                    toast = Toast.makeText(EDO12keyboard.this, "Wave chosen: sine", Toast.LENGTH_SHORT);
-                    toast.show();
-                } else if (progress==1) {
-                    toast = Toast.makeText(EDO12keyboard.this, "Wave chosen: square", Toast.LENGTH_SHORT);
-                    toast.show();
-                } else if (progress==2) {
-                    toast = Toast.makeText(EDO12keyboard.this, "Wave chosen: triangular", Toast.LENGTH_SHORT);
-                    toast.show();
-                } else {
-                    toast = Toast.makeText(EDO12keyboard.this, "Wave chosen: saw", Toast.LENGTH_SHORT);
-                    toast.show();
-                }
-
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                toast.cancel();
-                            }
-                        },
-                        1500
-                );
+                waveToast.waveinfo(progress, EDO12keyboard.this);
             }
 
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
+            public void onStartTrackingTouch(SeekBar seekBar) {}
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
+            public void onStopTrackingTouch(SeekBar seekBar) {}
         });
 
         SeekBar volumeslider = findViewById(R.id.volumeslider);
         volumeslider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 volume = (double) progress /1000;
             }
 
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
+            public void onStartTrackingTouch(SeekBar seekBar) {}
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
+            public void onStopTrackingTouch(SeekBar seekBar) {}
 
-            }
         });
 
         a4frequency = findViewById(R.id.a4frequency);
         a4frequency.addTextChangedListener(new TextWatcher() {
 
             public void afterTextChanged(Editable s) {
-
                 if (!a4frequency.getText().toString().isEmpty()) {
                     a4 = Double.parseDouble(a4frequency.getText().toString());
                     edo12 = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
                 }
-
             }
 
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-
             public void onTextChanged(CharSequence s, int start, int before, int count) {}
 
         });
     }
 
+/*
     public void generateFreq(int tonenumber) {
 
         tones[tonenumber] = soundgenerator.generateTone2(edo12[tonenumber],volume, wave, this);
 
     }
+*/
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouch(View v, MotionEvent event) {
 
-        String toneid = v.getContext().getResources().getResourceName(v.getId());
+        toneid = v.getContext().getResources().getResourceName(v.getId());
         int tone;
 
         if (!Character.isDigit(toneid.charAt(toneid.length() - 2))) {
@@ -154,12 +129,15 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
         }
 
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            generateFreq(tone-1);
+            tones[tone-1] = soundgenerator.generateTone2(edo12[tone-1], volume, wave, this, tones, tone-1);
             tones[tone-1].play();
+            lastfreq = BigDecimal.valueOf(edo12[tone - 1]).setScale(4, BigDecimal.ROUND_FLOOR) + " Hz";
+            ((TextView)findViewById(R.id.lastfrequencytext)).setText(lastfreq);
         }
         if (event.getAction() == MotionEvent.ACTION_UP) {
             tones[tone-1].release();
         }
+
 /*
         if (v.getId() == R.id.buttonPlayNote1) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
@@ -170,117 +148,8 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
                 tones[0].release();
             }
         }
-
-        if (v.getId() == R.id.buttonPlayNote2) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(1);
-                tones[1].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[1].release();
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote3) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(2);
-                tones[2].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[2].release();
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote4) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(3);
-                tones[3].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[3].release();
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote5) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(4);
-                tones[4].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[4].release();
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote6) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(5);
-                tones[5].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[5].release();
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote7) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(6);
-                tones[6].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[6].release();
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote8) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(7);
-                tones[7].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[7].release();
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote9) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(8);
-                tones[8].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[8].release();
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote10) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(9);
-                tones[9].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[9].release();
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote11) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(10);
-                tones[10].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[10].release();
-            }
-        }
-
-        if (v.getId() == R.id.buttonPlayNote12) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(11);
-                tones[11].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[11].release();
-            }
-        }
 */
+
         return false;
 
     }

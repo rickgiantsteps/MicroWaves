@@ -5,6 +5,8 @@
     <string name="volume">Volume</string>
     <string name="duratatono">Tone duration</string>
     <string name="waveform">Wave type</string>
+    <string name="ultimafrequenza">Last frequency played:</string>
+    <string name="defaultfrequenza">0 Hz</string>
     <string name="edo24">24-EDO</string>
     <string name="edo11">11-EDO</string>
     <string name="edo12">12-EDO</string>
