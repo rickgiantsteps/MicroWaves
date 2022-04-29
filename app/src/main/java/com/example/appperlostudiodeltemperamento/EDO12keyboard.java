@@ -39,7 +39,7 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
         setTheme(R.style.Theme_AppPerLoStudioDelTemperamento);
         setContentView(R.layout.activity_edo12keyboard);
 
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < edonumber; i++) {
             String buttonName = "buttonPlayNote"+(i+1);
             int buttonid = getResources().getIdentifier(buttonName, "id", getPackageName());
             buttons[i] = findViewById(buttonid);

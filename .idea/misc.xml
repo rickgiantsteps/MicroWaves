@@ -99,17 +99,18 @@
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/drawable/ic_noun_sine_waves_187988.xml" value="0.121" />
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_alphakeyboard.xml" value="0.2" />
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_bohlen_piercekeyboard.xml" value="0.2" />
-        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_edo11keyboard.xml" value="0.17346014492753623" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_edo11keyboard.xml" value="0.1" />
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_edo12keyboard.xml" value="0.264" />
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_edo22keyboard.xml" value="0.2" />
-        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_edo24keyboard.xml" value="0.4" />
-        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_edo7keyboard.xml" value="0.17346014492753623" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_edo24keyboard.xml" value="0.3197969543147208" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_edo7keyboard.xml" value="0.1" />
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_nedokeyboard.xml" value="0.536" />
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_pitagorakeyboard.xml" value="0.17346014492753623" />
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_shierlukeyboard.xml" value="0.17346014492753623" />
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_teoria_microtonale.xml" value="0.20512820512820512" />
         <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/activity_zarlinokeyboard.xml" value="0.264" />
+        <entry key="..\:/Users/15-CS2087NL/AndroidStudioProjects/MicroWaves/app/src/main/res/layout/fragment_e_d_o12.xml" value="0.20512820512820512" />
       </map>
     </option>
   </component>

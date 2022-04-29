@@ -61,14 +61,9 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
             }
 
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
+            public void onStartTrackingTouch(SeekBar seekBar) {}
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
+            public void onStopTrackingTouch(SeekBar seekBar) {}
         });
 
         SeekBar volumeslider = findViewById(R.id.volumeslider);
@@ -79,14 +74,9 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
             }
 
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
+            public void onStartTrackingTouch(SeekBar seekBar) {}
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
+            public void onStopTrackingTouch(SeekBar seekBar) {}
         });
 
         for (int i = 0; i < edonumber; i++) {
@@ -141,9 +131,7 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
             }
 
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-
             public void onTextChanged(CharSequence s, int start, int before, int count) {}
-
         });
 
     }
