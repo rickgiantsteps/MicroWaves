@@ -172,7 +172,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote1) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[0],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[0],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -188,7 +188,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote2) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[1],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[1],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -204,7 +204,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote3) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[2],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[2],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -220,7 +220,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote4) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[3],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[3],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -236,7 +236,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote5) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[4],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[4],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -252,7 +252,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote6) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[5],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[5],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -268,7 +268,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote7) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[6],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[6],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -284,7 +284,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote8) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[7],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[7],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -300,7 +300,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote9) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[8],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[8],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -316,7 +316,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote10) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[9],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[9],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -332,7 +332,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote11) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[10],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[10],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -348,7 +348,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote12) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(shierlu[11],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(shierlu[11],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {

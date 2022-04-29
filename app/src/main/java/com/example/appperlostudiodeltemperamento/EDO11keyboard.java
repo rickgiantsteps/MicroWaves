@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.math.BigDecimal;
 
@@ -118,7 +117,7 @@ public class EDO11keyboard extends AppCompatActivity implements View.OnTouchList
         }
 
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            tones[tone-1] = soundgenerator.generateTone2(edo11[tone-1], volume, wave, this, tones, tone-1);
+            tones[tone-1] = soundgenerator.generateTone(edo11[tone-1], volume, wave, this, tones, tone-1);
             tones[tone-1].play();
             lastfreq = BigDecimal.valueOf(edo11[tone - 1]).setScale(4, BigDecimal.ROUND_FLOOR) + " Hz";
             ((TextView)findViewById(R.id.lastfrequencytext)).setText(lastfreq);

@@ -174,7 +174,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote1) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[0],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[0],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -190,7 +190,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote2) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[1],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[1],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -206,7 +206,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote3) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[2],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[2],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -222,7 +222,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote4) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[3],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[3],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -238,7 +238,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote5) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[4],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[4],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -254,7 +254,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote6) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[5],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[5],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -270,7 +270,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote7) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[6],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[6],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -286,7 +286,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote8) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[7],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[7],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -302,7 +302,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote9) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[8],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[8],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -318,7 +318,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote10) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[9],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[9],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -334,7 +334,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote11) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[10],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[10],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -350,7 +350,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote12) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[11],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[11],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -366,7 +366,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
 
         if (v.getId() == R.id.buttonPlayNote13) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(bp[12],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(bp[12],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {

@@ -169,7 +169,7 @@ public class Alphakeyboard extends AppCompatActivity implements View.OnTouchList
 
         if (v.getId() == R.id.buttonPlayNote1) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(alpha[0], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(alpha[0], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -185,7 +185,7 @@ public class Alphakeyboard extends AppCompatActivity implements View.OnTouchList
 
         if (v.getId() == R.id.buttonPlayNote2) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(alpha[1], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(alpha[1], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -201,7 +201,7 @@ public class Alphakeyboard extends AppCompatActivity implements View.OnTouchList
 
         if (v.getId() == R.id.buttonPlayNote3) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(alpha[2], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(alpha[2], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -217,7 +217,7 @@ public class Alphakeyboard extends AppCompatActivity implements View.OnTouchList
 
         if (v.getId() == R.id.buttonPlayNote4) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(alpha[3], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(alpha[3], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -233,7 +233,7 @@ public class Alphakeyboard extends AppCompatActivity implements View.OnTouchList
 
         if (v.getId() == R.id.buttonPlayNote5) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(alpha[4], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(alpha[4], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -249,7 +249,7 @@ public class Alphakeyboard extends AppCompatActivity implements View.OnTouchList
 
         if (v.getId() == R.id.buttonPlayNote6) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(alpha[5], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(alpha[5], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -265,7 +265,7 @@ public class Alphakeyboard extends AppCompatActivity implements View.OnTouchList
 
         if (v.getId() == R.id.buttonPlayNote7) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(alpha[6], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(alpha[6], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -281,7 +281,7 @@ public class Alphakeyboard extends AppCompatActivity implements View.OnTouchList
 
         if (v.getId() == R.id.buttonPlayNote8) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(alpha[7], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(alpha[7], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -297,7 +297,7 @@ public class Alphakeyboard extends AppCompatActivity implements View.OnTouchList
 
         if (v.getId() == R.id.buttonPlayNote9) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(alpha[8], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(alpha[8], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {

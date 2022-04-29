@@ -165,7 +165,7 @@ public class Pitagorakeyboard extends AppCompatActivity implements View.OnTouchL
 
         if (v.getId() == R.id.buttonPlayNote1) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalapitagorica[0], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalapitagorica[0], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -181,7 +181,7 @@ public class Pitagorakeyboard extends AppCompatActivity implements View.OnTouchL
 
         if (v.getId() == R.id.buttonPlayNote2) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalapitagorica[1], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalapitagorica[1], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -197,7 +197,7 @@ public class Pitagorakeyboard extends AppCompatActivity implements View.OnTouchL
 
         if (v.getId() == R.id.buttonPlayNote3) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalapitagorica[2], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalapitagorica[2], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -213,7 +213,7 @@ public class Pitagorakeyboard extends AppCompatActivity implements View.OnTouchL
 
         if (v.getId() == R.id.buttonPlayNote4) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalapitagorica[3], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalapitagorica[3], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -229,7 +229,7 @@ public class Pitagorakeyboard extends AppCompatActivity implements View.OnTouchL
 
         if (v.getId() == R.id.buttonPlayNote5) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalapitagorica[4], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalapitagorica[4], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -245,7 +245,7 @@ public class Pitagorakeyboard extends AppCompatActivity implements View.OnTouchL
 
         if (v.getId() == R.id.buttonPlayNote6) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalapitagorica[5], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalapitagorica[5], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -261,7 +261,7 @@ public class Pitagorakeyboard extends AppCompatActivity implements View.OnTouchL
 
         if (v.getId() == R.id.buttonPlayNote7) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalapitagorica[6], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalapitagorica[6], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {

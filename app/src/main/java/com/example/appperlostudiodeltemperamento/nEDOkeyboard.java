@@ -152,7 +152,7 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
         if (tone <= edonumber) {
 
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                tones[tone-1] = soundgenerator.generateTone2(edo[tone-1], volume, wave, this, tones, tone-1);
+                tones[tone-1] = soundgenerator.generateTone(edo[tone-1], volume, wave, this, tones, tone-1);
                 tones[tone-1].play();
                 lastfreq = BigDecimal.valueOf(edo[tone - 1]).setScale(4, BigDecimal.ROUND_FLOOR) + " Hz";
                 ((TextView)findViewById(R.id.lastfrequencytext)).setText(lastfreq);

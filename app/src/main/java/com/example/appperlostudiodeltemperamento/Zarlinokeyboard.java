@@ -163,7 +163,7 @@ public class Zarlinokeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote1) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalanaturale[0],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalanaturale[0],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -179,7 +179,7 @@ public class Zarlinokeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote2) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalanaturale[1],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalanaturale[1],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -195,7 +195,7 @@ public class Zarlinokeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote3) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalanaturale[2],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalanaturale[2],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -211,7 +211,7 @@ public class Zarlinokeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote4) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalanaturale[3],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalanaturale[3],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -227,7 +227,7 @@ public class Zarlinokeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote5) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalanaturale[4],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalanaturale[4],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -243,7 +243,7 @@ public class Zarlinokeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote6) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalanaturale[5],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalanaturale[5],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {
@@ -259,7 +259,7 @@ public class Zarlinokeyboard extends AppCompatActivity implements View.OnTouchLi
 
         if (v.getId() == R.id.buttonPlayNote7) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone(scalanaturale[6],noteduration,volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(scalanaturale[6],noteduration,volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {

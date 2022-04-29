@@ -129,7 +129,7 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
         }
 
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            tones[tone-1] = soundgenerator.generateTone2(edo12[tone-1], volume, wave, this, tones, tone-1);
+            tones[tone-1] = soundgenerator.generateTone(edo12[tone-1], volume, wave, this, tones, tone-1);
             tones[tone-1].play();
             lastfreq = BigDecimal.valueOf(edo12[tone - 1]).setScale(4, BigDecimal.ROUND_FLOOR) + " Hz";
             ((TextView)findViewById(R.id.lastfrequencytext)).setText(lastfreq);
