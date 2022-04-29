@@ -166,4 +166,5 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
 
         return false;
     }
+
 }
