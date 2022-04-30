@@ -141,7 +141,7 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
         /*
         if (v.getId() == R.id.buttonPlayNote1) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone2(scalapitagorica[0], noteduration, volume, wave, this);
+                AudioTrack tone = soundgenerator.generateTone2(edo[0], noteduration, volume, wave, this);
                 tone.play();
                 new java.util.Timer().schedule(
                         new java.util.TimerTask() {

@@ -172,17 +172,6 @@ public class pitchcalculator {
             }
         }
 
-      /*  double[] rapporti = {1, 27.0/25, 25.0/21, 9.0/7, 7.0/5, 75.0/49, 5.0/3, 9.0/5, 49.0/25, 15.0/7, 7.0/3, 65.0/25, 25.0/9};
-        double[] bp = new double[13];
-
-
-        for (int i = 0; i < 13; i += 1) {
-
-            bp[i] = startingnote * rapporti[i];
-
-        }*/
-
-
         if (tritave<4) {
 
             for(int i=0; i<13; i++) {

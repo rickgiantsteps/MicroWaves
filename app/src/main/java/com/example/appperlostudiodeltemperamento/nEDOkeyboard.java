@@ -34,7 +34,6 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
     String toneid;
     String lastfreq;
 
-
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

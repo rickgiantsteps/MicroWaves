@@ -11,6 +11,7 @@ import android.widget.Button;
 
 public class scale_non_temperate extends AppCompatActivity  implements View.OnTouchListener {
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
