@@ -19,21 +19,8 @@ public class soundgenerator {
         Toast toast;
 
         if (freq > 44100.0 / 2) {
-            toast = Toast.makeText(context, "Frequency played: " + new BigDecimal(freq).setScale(4, BigDecimal.ROUND_FLOOR) + " Hz\n\nThe pitch generated is greater than half of the sampling frequency (44100Hz): aliasing might be present", Toast.LENGTH_SHORT);
+            toast = Toast.makeText(context, "Frequency played: " + new BigDecimal(freq).setScale(4, BigDecimal.ROUND_FLOOR) + " Hz\n\nThe pitch generated is greater than half of the sampling frequency (44100Hz): aliasing might be present", Toast.LENGTH_LONG);
             toast.show();
-        } else {
-            toast = Toast.makeText(context, "Frequency played: " + new BigDecimal(freq).setScale(4, BigDecimal.ROUND_FLOOR) + " Hz", Toast.LENGTH_SHORT);
-            //toast = Toast.makeText(context, "Frequency played: " + freq + " Hz", Toast.LENGTH_SHORT);
-            toast.show();
-            new java.util.Timer().schedule(
-                    new java.util.TimerTask() {
-                        @Override
-                        public void run() {
-                            toast.cancel();
-                        }
-                    },
-                    750
-            );
         }
 
         int durationmillsec = 5000;

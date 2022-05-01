@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
+import android.content.res.Configuration;
 import android.media.AudioTrack;
 import android.os.Bundle;
 import android.text.Editable;
@@ -101,20 +102,42 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
                 findViewById(buttonid).setBackgroundColor(ContextCompat.getColor(this, R.color.buttonblue));
             }
 
-            for (int k = nedo.getMaxValue(); k > nedo.getValue(); k--) {
-                String buttonidstring = "buttonPlayNote" + k;
-                int buttonid = getResources().getIdentifier(buttonidstring, "id", getPackageName());
-                findViewById(buttonid).setBackgroundColor(ContextCompat.getColor(this, R.color.dark_gray_bg));
+            switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {
+                case Configuration.UI_MODE_NIGHT_YES:
+                    for (int k = nedo.getMaxValue(); k > nedo.getValue(); k--) {
+                        String buttonidstring = "buttonPlayNote" + k;
+                        int buttonid = getResources().getIdentifier(buttonidstring, "id", getPackageName());
+                        findViewById(buttonid).setBackgroundColor(ContextCompat.getColor(this, R.color.cream_bg));
+                    }
+                    break;
+                case Configuration.UI_MODE_NIGHT_NO:
+                    for (int k = nedo.getMaxValue(); k > nedo.getValue(); k--) {
+                        String buttonidstring = "buttonPlayNote" + k;
+                        int buttonid = getResources().getIdentifier(buttonidstring, "id", getPackageName());
+                        findViewById(buttonid).setBackgroundColor(ContextCompat.getColor(this, R.color.black));
+                    }
+                    break;
             }
 
             edonumber = nedo.getValue();
             edo = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
         });
 
-       for (int i = nedo.getMaxValue(); i > nedo.getValue() ; i--) {
-            String buttonidstring = "buttonPlayNote" + i;
-            int buttonid = getResources().getIdentifier(buttonidstring, "id", getPackageName());
-            findViewById(buttonid).setBackgroundColor(ContextCompat.getColor(this, R.color.dark_gray_bg));
+        switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {
+            case Configuration.UI_MODE_NIGHT_YES:
+                for (int k = nedo.getMaxValue(); k > nedo.getValue(); k--) {
+                    String buttonidstring = "buttonPlayNote" + k;
+                    int buttonid = getResources().getIdentifier(buttonidstring, "id", getPackageName());
+                    findViewById(buttonid).setBackgroundColor(ContextCompat.getColor(this, R.color.cream_bg));
+                }
+                break;
+            case Configuration.UI_MODE_NIGHT_NO:
+                for (int k = nedo.getMaxValue(); k > nedo.getValue(); k--) {
+                    String buttonidstring = "buttonPlayNote" + k;
+                    int buttonid = getResources().getIdentifier(buttonidstring, "id", getPackageName());
+                    findViewById(buttonid).setBackgroundColor(ContextCompat.getColor(this, R.color.black));
+                }
+                break;
         }
 
         a4frequency = findViewById(R.id.a4frequency);

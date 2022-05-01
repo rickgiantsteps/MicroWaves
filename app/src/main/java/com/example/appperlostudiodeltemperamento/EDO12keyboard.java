@@ -48,11 +48,6 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
             buttons[i].setTextSize(13);
         }
 
-        /*
-        Button buttonPlayNote1 = findViewById(R.id.buttonPlayNote1);
-        buttonPlayNote1.setOnTouchListener(this);
-         */
-
         edo12 = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
 
         octave = findViewById(R.id.octave);
@@ -109,14 +104,6 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
         });
     }
 
-/*
-    public void generateFreq(int tonenumber) {
-
-        tones[tonenumber] = soundgenerator.generateTone2(edo12[tonenumber],volume, wave, this);
-
-    }
-*/
-
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouch(View v, MotionEvent event) {
@@ -139,35 +126,6 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
         if (event.getAction() == MotionEvent.ACTION_UP) {
             tones[tone-1].release();
         }
-
-        /*
-        if (v.getId() == R.id.buttonPlayNote1) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                AudioTrack tone = soundgenerator.generateTone2(edo[0], noteduration, volume, wave, this);
-                tone.play();
-                new java.util.Timer().schedule(
-                        new java.util.TimerTask() {
-                            @Override
-                            public void run() {
-                                tone.release();
-                            }
-                        },
-                        noteduration + 2
-                );
-            }
-        }
-
-
-        if (v.getId() == R.id.buttonPlayNote1) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                generateFreq(0);
-                tones[0].play();
-            }
-            if (event.getAction() == MotionEvent.ACTION_UP) {
-                tones[0].release();
-            }
-        }
-*/
 
         return false;
 
