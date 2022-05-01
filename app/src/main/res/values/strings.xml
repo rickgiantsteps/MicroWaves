@@ -7,6 +7,8 @@
     <string name="waveform">Wave type</string>
     <string name="ultimafrequenza">Last frequency played:</string>
     <string name="defaultfrequenza">0 Hz</string>
+    <string name="nedo">n-EDO</string>
+    <string name="nedospiegazione">Create your own EDO:</string>
     <string name="edo24">24-EDO</string>
     <string name="edo11">11-EDO</string>
     <string name="edo12">12-EDO</string>
@@ -22,6 +24,8 @@
     <string name="ottava">Octave:</string>
     <string name="quintanumero">Fifth:</string>
     <string name="trittava">Tritave:</string>
+    <string name="temperate">Equal Temperament</string>
+    <string name="nonedo">Other tunings (non EDO)</string>
     <string name="spiegazionetemperate">Equal temperament is a tuning system that divides the octave into equal steps.
     \nThis is achieved by selecting a starting frequency for the octave, choosing the desired number of octave subdivisions then multiplying the central frequency by n-th root of 2 (octave) n times: this will result in a set of frequencies that divides the octave into n equally spaced notes.
     \nThe most commonly used equally tempered system is 12-EDO, more commonly known as twelve-tone equal temperament.
@@ -30,7 +34,7 @@
     \n\nClick the button to have more information on the scales present in the app:</string>
     <string name="spiegazionenontemperate">Non EDO tunings comprise all the systems that don\'t subdivide the octave into equal steps, by using different approaches to build a set of frequency to compose music with.
         \n\nThey can be justly tuned, meaning all the ratios between the notes can be represented with rational numbers, they can be tempered, meaning the intervals of JI are slightly wider/narrower to meet certain requirements, and so on.
-        \n\nIn this app the non EDO tunings presents range from historical justly intonated tunings like the Pythagorean, Shí-èr-lǜ and five-limit tuning (Zarlinian scale), to more experimental tunings like Wendy Carlos\' Alpha scale and the Bohlen-Pierce scale.
+        \n\nIn this app the non EDO tunings presents range from historical justly intoned tunings like the Pythagorean, Shí-èr-lǜ and five-limit tuning (Zarlinian scale), to more experimental tunings like Wendy Carlos\' Alpha scale and the Bohlen-Pierce scale.
         \n\n\nClick the button to have more information on the scales present in the app:</string>
     <string name="scalesindetail">Scales in detail</string>
     <string name="spiegazione">Microtonal\ntheory</string>
@@ -51,7 +55,7 @@
     <string name="spiegazioneZarlino">Ptolemy\'s intense diatonic scale, was first theorised by the greek mathematician Ptolemy and later formalized by italian music theorist Zarlino.
     It constructs the scale by using three intervals: the greater tone (9:8), the lesser tone (10:9), and the just diatonic semitone (16:15).</string>
     <string name="spiegazioneBP">The Bohlen–Pierce scale is a tuning based on the division of the \"tritave\" (equivalent to a 3:1 ratio) instead of the usual octave (2:1 ratio).
-    It can also be approximated to a justly intonated version, meaning each interval can be represented by a rational number.</string>
+    It can also be approximated to a justly intoned version, meaning each interval can be represented by a rational number.</string>
     <string name="spiegazioneShierlu">Shi-er-lu was a standard set of notes used in ancient chinese music theory. The first standardization of its pitches was written down during the 2nd century AD.
     It\'s constructed using solely powers of the perfect fifth (3:2, akin to the pythagorean tuning).</string>
     <string name="keyboard">Microtonal\nkeyboards</string>
@@ -77,7 +81,7 @@
     \n\n\nSome examples of compositions in 12EDO:\n<a href="https://www.youtube.com/watch?v=bT7Hj-ea0VE">Bob Dylan - All Along the Watchtower</a>\n<a href="https://www.youtube.com/watch?v=qrO4YZeyl0I">Lady Gaga - Bad Romance</a>\n<a href="https://www.youtube.com/watch?v=VeTFxbsVGrI">Schoenberg: Drei Klavierstücke, Op. 11</a>\n<a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ">Queen – Bohemian Rhapsody</a></string>
     <string name="detailed24edo">\n24EDO, also known as the quarter-tone scale (since it divides the more common 12EDO system\'s intervals in half), is an equal temperament system that divides the octave into 24 equal parts.
                 \n\nEach of the 24 steps is exactly 50 cents (half of 12EDO\'s intervals). Since it\'s an equally tempered system the ratio between each consecutive note is a twenty-fourth root of two  (≈ 1.0293).
-    \n\nIt retains many of the harmonic qualities of twelve tone equal temperament (since it\'s a substet of 24EDO) and it\'s commonly used in arabic compositions and music theory.
+    \n\nIt retains many of the harmonic qualities of twelve tone equal temperament (since it\'s a subset of 24EDO) and it\'s commonly used in arabic compositions and music theory.
     \n\n\nSome examples of compositions in 24EDO:\n<a href="https://www.youtube.com/watch?v=Q-i1XZc8ZwA">King Gizzard and The Lizard Wizard - Rattlesnake</a>\n<a href="https://www.youtube.com/watch?v=Uc5SL3isZJs">Luciano Berio - E vò</a>\n<a href="https://www.youtube.com/watch?v=r-Pld_6Q0N8">Umm Kulthum – Seret El Hob</a></string>
     <string name="detailed22edo">\n22EDO is an equal temperament system that divides the octave into 22 equal parts.
         \n\nEach of the 22 steps is exactly 54.54545 cents. Since it\'s an equally tempered scale the ratio between each consecutive note is a twenty-second root of two (≈ 1.03201).

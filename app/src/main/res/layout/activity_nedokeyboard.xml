@@ -758,7 +758,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/pt_sans"
-        android:text="n-EDO"
+        android:text="@string/nedo"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -772,7 +772,7 @@
         android:layout_width="221dp"
         android:layout_height="28dp"
         android:fontFamily="@font/pt_sans"
-        android:text="Create your own EDO:"
+        android:text="@string/nedospiegazione"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -829,7 +829,8 @@
         app:layout_constraintHorizontal_bias="0.208"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintVertical_bias="0.188"
+        tools:ignore="Autofill,HardcodedText,LabelFor"/>
 
     <TextView
         android:id="@+id/Hertz"
@@ -883,7 +884,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_noun_sawtooth_538692" />
+        app:srcCompat="@drawable/ic_noun_sawtooth_538692"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -895,7 +897,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_noun_sine_waves_187988" />
+        app:srcCompat="@drawable/ic_noun_sine_waves_187988"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/waveform"
@@ -933,7 +936,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_noun_squarewave_538698" />
+        app:srcCompat="@drawable/ic_noun_squarewave_538698"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -945,7 +949,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_noun_trianglewave_538696" />
+        app:srcCompat="@drawable/ic_noun_trianglewave_538696"
+        tools:ignore="ContentDescription" />
 
     <SeekBar
         android:id="@+id/waveformslider"

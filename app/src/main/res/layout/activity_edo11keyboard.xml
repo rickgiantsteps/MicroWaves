@@ -10,9 +10,7 @@
         android:id="@+id/buttonPlayNote3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.405"
@@ -25,9 +23,7 @@
         android:id="@+id/buttonPlayNote5"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.737"
@@ -40,9 +36,7 @@
         android:id="@+id/buttonPlayNote1"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="1"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,9 +51,7 @@
         android:id="@+id/buttonPlayNote4"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.568"
@@ -72,9 +64,7 @@
         android:id="@+id/buttonPlayNote7"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
@@ -87,9 +77,7 @@
         android:id="@+id/buttonPlayNote10"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.65"
@@ -102,9 +90,7 @@
         android:id="@+id/buttonPlayNote9"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
@@ -117,9 +103,7 @@
         android:id="@+id/buttonPlayNote8"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.317"
@@ -132,9 +116,7 @@
         android:id="@+id/buttonPlayNote11"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="11"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.813"
@@ -147,9 +129,7 @@
         android:id="@+id/buttonPlayNote6"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
@@ -162,9 +142,7 @@
         android:id="@+id/buttonPlayNote2"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="13dp"
         android:padding="1dp"
-        android:text="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.236"
@@ -284,7 +262,8 @@
         app:layout_constraintHorizontal_bias="0.215"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351" />
+        app:layout_constraintVertical_bias="0.351"
+        tools:ignore="Autofill,HardcodedText,LabelFor" />
 
     <TextView
         android:id="@+id/A4"
@@ -334,7 +313,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_noun_sine_waves_187988" />
+        app:srcCompat="@drawable/ic_noun_sine_waves_187988"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -346,7 +326,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_noun_trianglewave_538696" />
+        app:srcCompat="@drawable/ic_noun_trianglewave_538696"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -358,7 +339,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_noun_squarewave_538698" />
+        app:srcCompat="@drawable/ic_noun_squarewave_538698"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -370,7 +352,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_noun_sawtooth_538692" />
+        app:srcCompat="@drawable/ic_noun_sawtooth_538692"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView11"

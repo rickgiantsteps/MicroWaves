@@ -44,6 +44,8 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
             int buttonid = getResources().getIdentifier(buttonName, "id", getPackageName());
             buttons[i] = findViewById(buttonid);
             buttons[i].setOnTouchListener(this);
+            buttons[i].setText(String.valueOf(i+1));
+            buttons[i].setTextSize(13);
         }
 
         /*

@@ -26,4 +26,5 @@
     <style name="Theme.AppPerLoStudioDelTemperamento.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.AppPerLoStudioDelTemperamento.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
 </resources>

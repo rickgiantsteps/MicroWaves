@@ -44,6 +44,8 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
             int buttonid = getResources().getIdentifier(buttonName, "id", getPackageName());
             buttons[i] = findViewById(buttonid);
             buttons[i].setOnTouchListener(this);
+            buttons[i].setText(String.valueOf(i+1));
+            buttons[i].setTextSize(13);
         }
 
         bp = pitchcalculator.calculateBohlenPierce(a4, trittava);

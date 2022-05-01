@@ -44,6 +44,8 @@ public class EDO7keyboard extends AppCompatActivity implements View.OnTouchListe
             int buttonid = getResources().getIdentifier(buttonName, "id", getPackageName());
             buttons[i] = findViewById(buttonid);
             buttons[i].setOnTouchListener(this);
+            buttons[i].setText(String.valueOf(i+1));
+            buttons[i].setTextSize(13);
         }
 
         edo7 = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);

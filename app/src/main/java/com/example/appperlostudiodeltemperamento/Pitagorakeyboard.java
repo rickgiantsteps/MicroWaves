@@ -44,6 +44,8 @@ public class Pitagorakeyboard extends AppCompatActivity implements View.OnTouchL
             int buttonid = getResources().getIdentifier(buttonName, "id", getPackageName());
             buttons[i] = findViewById(buttonid);
             buttons[i].setOnTouchListener(this);
+            buttons[i].setText(String.valueOf(i+1));
+            buttons[i].setTextSize(13);
         }
 
         scalapitagorica = pitchcalculator.calculatePitagora(a4, ottava);
