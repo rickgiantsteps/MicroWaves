@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.appperlostudiodeltemperamento">
+    package="com.example.microwaves">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,62 +12,62 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppPerLoStudioDelTemperamento">
         <activity
-            android:name=".nEDOkeyboard"
+            android:name="com.example.microwaves.nEDOkeyboard"
             android:exported="false" />
         <activity
-            android:name=".EDO7keyboard"
+            android:name="com.example.microwaves.EDO7keyboard"
             android:exported="false" />
         <activity
-            android:name=".Shierlukeyboard"
+            android:name="com.example.microwaves.Shierlukeyboard"
             android:exported="false" />
         <activity
-            android:name=".BohlenPiercekeyboard"
+            android:name="com.example.microwaves.BohlenPiercekeyboard"
             android:exported="false" />
         <activity
-            android:name=".Alphakeyboard"
+            android:name="com.example.microwaves.Alphakeyboard"
             android:exported="false" />
         <activity
-            android:name=".EDO12keyboard"
+            android:name="com.example.microwaves.EDO12keyboard"
             android:exported="false" />
         <activity
-            android:name=".EDO22keyboard"
+            android:name="com.example.microwaves.EDO22keyboard"
             android:exported="false" />
         <activity
-            android:name=".Pitagorakeyboard"
+            android:name="com.example.microwaves.Pitagorakeyboard"
             android:exported="false" />
         <activity
-            android:name=".Zarlinokeyboard"
+            android:name="com.example.microwaves.Zarlinokeyboard"
             android:exported="false" />
         <activity
-            android:name=".nontemperate_dettaglio"
+            android:name="com.example.microwaves.nontemperate_dettaglio"
             android:exported="false"
             android:label="@string/title_activity_nontemperate_dettaglio"
             android:theme="@style/Theme.AppPerLoStudioDelTemperamento.NoActionBar" />
         <activity
-            android:name=".temperate_dettaglio"
+            android:name="com.example.microwaves.temperate_dettaglio"
             android:exported="false"
             android:label="@string/title_activity_temperate_dettaglio"
             android:theme="@style/Theme.AppPerLoStudioDelTemperamento.NoActionBar" />
         <activity
-            android:name=".scale_non_temperate"
+            android:name="com.example.microwaves.scale_non_temperate"
             android:exported="false" />
         <activity
-            android:name=".scale_temperate"
+            android:name="com.example.microwaves.scale_temperate"
             android:exported="false" />
         <activity
-            android:name=".scaleSelection"
+            android:name="com.example.microwaves.scaleSelection"
             android:exported="false" />
         <activity
-            android:name=".EDO11keyboard"
+            android:name="com.example.microwaves.EDO11keyboard"
             android:exported="false" />
         <activity
-            android:name=".TeoriaMicrotonale"
+            android:name="com.example.microwaves.TeoriaMicrotonale"
             android:exported="false" />
         <activity
-            android:name=".EDO24keyboard"
+            android:name="com.example.microwaves.EDO24keyboard"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.microwaves.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
