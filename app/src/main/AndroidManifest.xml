@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.microwaves">
+    package="com.unimi.lim.microwaves">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,64 +10,64 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppPerLoStudioDelTemperamento">
+        android:theme="@style/Theme.MicroWaves">
         <activity
-            android:name="com.example.microwaves.nEDOkeyboard"
+            android:name="com.unimi.lim.microwaves.nEDOkeyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.EDO7keyboard"
+            android:name="com.unimi.lim.microwaves.EDO7keyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.Shierlukeyboard"
+            android:name="com.unimi.lim.microwaves.Shierlukeyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.BohlenPiercekeyboard"
+            android:name="com.unimi.lim.microwaves.BohlenPiercekeyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.Alphakeyboard"
+            android:name="com.unimi.lim.microwaves.Alphakeyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.EDO12keyboard"
+            android:name="com.unimi.lim.microwaves.EDO12keyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.EDO22keyboard"
+            android:name="com.unimi.lim.microwaves.EDO22keyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.Pitagorakeyboard"
+            android:name="com.unimi.lim.microwaves.Pitagorakeyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.Zarlinokeyboard"
+            android:name="com.unimi.lim.microwaves.Zarlinokeyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.nontemperate_dettaglio"
+            android:name="com.unimi.lim.microwaves.nontemperate_dettaglio"
             android:exported="false"
             android:label="@string/title_activity_nontemperate_dettaglio"
-            android:theme="@style/Theme.AppPerLoStudioDelTemperamento.NoActionBar" />
+            android:theme="@style/Theme.MicroWaves.NoActionBar" />
         <activity
-            android:name="com.example.microwaves.temperate_dettaglio"
+            android:name="com.unimi.lim.microwaves.temperate_dettaglio"
             android:exported="false"
             android:label="@string/title_activity_temperate_dettaglio"
-            android:theme="@style/Theme.AppPerLoStudioDelTemperamento.NoActionBar" />
+            android:theme="@style/Theme.MicroWaves.NoActionBar" />
         <activity
-            android:name="com.example.microwaves.scale_non_temperate"
+            android:name="com.unimi.lim.microwaves.scale_non_temperate"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.scale_temperate"
+            android:name="com.unimi.lim.microwaves.scale_temperate"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.scaleSelection"
+            android:name="com.unimi.lim.microwaves.scaleSelection"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.EDO11keyboard"
+            android:name="com.unimi.lim.microwaves.EDO11keyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.TeoriaMicrotonale"
+            android:name="com.unimi.lim.microwaves.TeoriaMicrotonale"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.EDO24keyboard"
+            android:name="com.unimi.lim.microwaves.EDO24keyboard"
             android:exported="false" />
         <activity
-            android:name="com.example.microwaves.MainActivity"
+            android:name="com.unimi.lim.microwaves.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
