@@ -144,17 +144,17 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="358dp"
-        android:layout_height="123dp"
+        android:layout_width="344dp"
+        android:layout_height="155dp"
         android:fontFamily="@font/pt_sans"
         android:text="@string/spiegazione7"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintVertical_bias="0.139" />
 
     <TextView
         android:id="@+id/textView5"
@@ -300,7 +300,7 @@
         app:layout_constraintHorizontal_bias="0.987"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.997"
         app:srcCompat="@drawable/ic_noun_sawtooth_538692"
         tools:ignore="ContentDescription" />
 
