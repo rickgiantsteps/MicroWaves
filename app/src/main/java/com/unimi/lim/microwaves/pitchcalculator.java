@@ -114,17 +114,14 @@ public class pitchcalculator {
 
         if (quinta<4) {
 
-            for (int i = 0; i < 6-quinta; i += 1) {
-                startingnote = perfect5th;
-                perfect5th = startingnote*(2.0/3);
-
+            for (int i = 0; i < 4-quinta; i += 1) {
+                perfect5th = startingnote;
+                startingnote = perfect5th*(2.0/3);
             }
 
+            step = (perfect5th-startingnote)/9;
 
             for (int i = 0; i < 9; i += 1) {
-
-                perfect5th = startingnote*(3.0/2);
-                step = (perfect5th-startingnote)/9;
 
                 if (i==0) {
                     alpha[i] = startingnote;
@@ -139,9 +136,9 @@ public class pitchcalculator {
             for (int i = 0; i < quinta-4; i += 1) {
                 startingnote = perfect5th;
                 perfect5th = startingnote*(3.0/2);
-                step = (perfect5th-startingnote)/9;
             }
 
+            step = (perfect5th-startingnote)/9;
 
             for (int i = 0; i < 9; i += 1) {
 

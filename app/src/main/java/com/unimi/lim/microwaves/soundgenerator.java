@@ -1,5 +1,6 @@
 package com.unimi.lim.microwaves;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.media.AudioAttributes;
 import android.media.AudioFormat;
@@ -13,20 +14,25 @@ import java.math.RoundingMode;
 
 public class soundgenerator {
 
+
+    @SuppressLint("ShowToast")
     // Wave -> (0 = sine, 1 = square, 2 = tri, 3 = saw)
     static AudioTrack generateTone(double freq, double volume, int wave, Context context, AudioTrack[] tones, int tonenumber)
     {
 
         int samplingfreq = 44100;
 
+        //toasts not used (@SuppressLint("ShowToast")) but aliasing warning can be reimplemented if needed
         Toast toast;
 
         if (freq > samplingfreq / 2.0) {
             toast = Toast.makeText(context, "Frequency played: " + new BigDecimal(freq).setScale(4, RoundingMode.FLOOR) + " Hz\n\nThe pitch generated is greater than half of the sampling frequency (44100Hz): aliasing might be present", Toast.LENGTH_LONG);
-            toast.show();
+            //toast.show();
+            toast.cancel();
         } else if (wave != 0 && freq > 10000) {
-            toast = Toast.makeText(context, "Waves are synthesized by using a 'naive sampling' method, non sine waves can be inaccurate at high frequencies: aliasing might be present", Toast.LENGTH_LONG);
-            toast.show();
+            toast = Toast.makeText(context, "Waves are synthesized by using a 'naive sampling' method, non sine waves can be inaccurate and may be affected by aliasing at high frequencies (use the sine wave for better results)", Toast.LENGTH_LONG);
+            //toast.show();
+            toast.cancel();
         }
 
         int durationmillsec = 5000;
