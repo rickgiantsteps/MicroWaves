@@ -28,13 +28,13 @@ public class TeoriaMicrotonale extends AppCompatActivity implements View.OnTouch
 
         if (v.getId() == R.id.temperate) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                startActivity(new Intent(TeoriaMicrotonale.this, scale_temperate.class));
+                startActivity(new Intent(TeoriaMicrotonale.this, scale_equabili.class));
             }
         }
 
         if (v.getId() == R.id.nontemperate) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                startActivity(new Intent(TeoriaMicrotonale.this, scale_non_temperate.class));
+                startActivity(new Intent(TeoriaMicrotonale.this, scale_non_equabili.class));
             }
         }
 

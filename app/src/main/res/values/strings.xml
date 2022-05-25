@@ -77,7 +77,7 @@
     <string name="title_activity_nontemperate_dettaglio">nontemperate_detail</string>
     <string name="detailed12edo">\n12EDO, or as it is more commonly known Twelve-tone equal temperament, is the most common tuning system in the western world.
         \n\nIt is constructed by dividing the octave into 12 equal steps, each step is exactly 100 cents. Since it\'s an equally tempered system the ratio between each consecutive note is a twelfth root of two (≈ 1.05946).
-    \n\nIt was first formalized in europe during the 18th century by Andreas Werckmeister but it was theorised both in ancient China and Greece
+    \n\nIt was first formalized in europe during the 18th century by Andreas Werckmeister but it was theorised both in ancient China and Greece.
     \n\n\nSome examples of compositions in 12EDO:\n<a href="https://www.youtube.com/watch?v=bT7Hj-ea0VE">Bob Dylan - All Along the Watchtower</a>\n<a href="https://www.youtube.com/watch?v=qrO4YZeyl0I">Lady Gaga - Bad Romance</a>\n<a href="https://www.youtube.com/watch?v=VeTFxbsVGrI">Schoenberg: Drei Klavierstücke, Op. 11</a>\n<a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ">Queen – Bohemian Rhapsody</a></string>
     <string name="detailed24edo">\n24EDO, also known as the quarter-tone scale (since it divides the more common 12EDO system\'s intervals in half), is an equal temperament system that divides the octave into 24 equal parts.
                 \n\nEach of the 24 steps is exactly 50 cents (half of 12EDO\'s intervals). Since it\'s an equally tempered system the ratio between each consecutive note is a twenty-fourth root of two  (≈ 1.0293).

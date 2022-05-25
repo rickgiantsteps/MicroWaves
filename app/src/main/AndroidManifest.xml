@@ -39,20 +39,20 @@
             android:name="com.unimi.lim.microwaves.Zarlinokeyboard"
             android:exported="false" />
         <activity
-            android:name="com.unimi.lim.microwaves.nontemperate_dettaglio"
+            android:name="com.unimi.lim.microwaves.nonequabili_dettaglio"
             android:exported="false"
             android:label="@string/title_activity_nontemperate_dettaglio"
             android:theme="@style/Theme.MicroWaves.NoActionBar" />
         <activity
-            android:name="com.unimi.lim.microwaves.temperate_dettaglio"
+            android:name="com.unimi.lim.microwaves.equabili_dettaglio"
             android:exported="false"
             android:label="@string/title_activity_temperate_dettaglio"
             android:theme="@style/Theme.MicroWaves.NoActionBar" />
         <activity
-            android:name="com.unimi.lim.microwaves.scale_non_temperate"
+            android:name="com.unimi.lim.microwaves.scale_non_equabili"
             android:exported="false" />
         <activity
-            android:name="com.unimi.lim.microwaves.scale_temperate"
+            android:name="com.unimi.lim.microwaves.scale_equabili"
             android:exported="false" />
         <activity
             android:name="com.unimi.lim.microwaves.scaleSelection"

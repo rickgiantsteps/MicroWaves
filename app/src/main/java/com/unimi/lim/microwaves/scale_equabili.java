@@ -9,7 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
-public class scale_temperate extends AppCompatActivity  implements View.OnTouchListener {
+public class scale_equabili extends AppCompatActivity  implements View.OnTouchListener {
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -27,7 +27,7 @@ public class scale_temperate extends AppCompatActivity  implements View.OnTouchL
 
         if (v.getId() == R.id.temperateindettaglio) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                startActivity(new Intent(this, temperate_dettaglio.class));
+                startActivity(new Intent(this, equabili_dettaglio.class));
             }
         }
 

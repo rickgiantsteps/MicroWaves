@@ -9,7 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
-public class scale_non_temperate extends AppCompatActivity  implements View.OnTouchListener {
+public class scale_non_equabili extends AppCompatActivity  implements View.OnTouchListener {
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -26,7 +26,7 @@ public class scale_non_temperate extends AppCompatActivity  implements View.OnTo
 
         if (v.getId() == R.id.nontemperateindettaglio) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                startActivity(new Intent(this, nontemperate_dettaglio.class));
+                startActivity(new Intent(this, nonequabili_dettaglio.class));
             }
         }
 
