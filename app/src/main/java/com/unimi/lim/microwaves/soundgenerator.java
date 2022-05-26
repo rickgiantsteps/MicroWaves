@@ -17,7 +17,7 @@ public class soundgenerator {
 
     @SuppressLint("ShowToast")
     // Wave -> (0 = sine, 1 = square, 2 = tri, 3 = saw)
-    static AudioTrack generateTone(double freq, double volume, int wave, Context context, AudioTrack[] tones, int tonenumber)
+    static AudioTrack generateTone(double freq, double volume, int wave, Context context)
     {
 
         int samplingfreq = 44100;
@@ -107,8 +107,7 @@ public class soundgenerator {
         //writes the tone to the audio track object
         track.write(samples, 0, count);
 
-        tones[tonenumber] =  track;
-        return tones[tonenumber];
+        return track;
     }
 
 }

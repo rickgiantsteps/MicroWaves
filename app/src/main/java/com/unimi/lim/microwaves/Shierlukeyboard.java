@@ -119,7 +119,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
         }
 
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            tones[tone-1] = soundgenerator.generateTone(shierlu[tone-1], volume, wave, this, tones, tone-1);
+            tones[tone-1] = soundgenerator.generateTone(shierlu[tone-1], volume, wave, this);
             tones[tone-1].play();
             lastfreq = BigDecimal.valueOf(shierlu[tone - 1]).setScale(4, RoundingMode.FLOOR) + " Hz";
             ((TextView)findViewById(R.id.lastfrequencytext)).setText(lastfreq);
