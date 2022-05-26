@@ -48,41 +48,48 @@ public class soundgenerator {
 
             double sinewave = Math.sin(2 * Math.PI * i / (samplingfreq * 2.0 / freq));
 
-            if (wave == 0){
-                //sine wave
-                short sample = (short) ((volume * sinewave) * 0x7FFF);
-                //makes a stereo signal
-                samples[i] = sample;
-                samples[i + 1] = sample;
+            switch(wave){
+                case 0: {
+                    //sine wave
+                    short sample = (short) ((volume * sinewave) * 0x7FFF);
+                    //makes a stereo signal
+                    samples[i] = sample;
+                    samples[i + 1] = sample;
 
-            } else if (wave == 1) {
-
-                //this makes a stereo square wave
-                short sample = (short) (sinewave * 0x7FFF);
-                if (sample > 0.0) {
-                    samples[i] = (short) (volume/2 * 0x7FFF);
-                    samples[i + 1] = (short) (volume/2  * 0x7FFF);
+                    break;
                 }
+                case 1: {
 
-                if (sample < 0.0) {
-                    samples[i] = (short) -(volume/2  * 0x7FFF);
-                    samples[i + 1] = (short) -(volume/2  * 0x7FFF);
+                    //this makes a stereo square wave
+                    short sample = (short) (sinewave * 0x7FFF);
+                    if (sample > 0.0) {
+                        samples[i] = (short) (volume / 2 * 0x7FFF);
+                        samples[i + 1] = (short) (volume / 2 * 0x7FFF);
+                    }
+
+                    if (sample < 0.0) {
+                        samples[i] = (short) -(volume / 2 * 0x7FFF);
+                        samples[i + 1] = (short) -(volume / 2 * 0x7FFF);
+                    }
+                    break;
                 }
+                case 2: {
 
-            } else if (wave == 2) {
+                    //this makes a stereo triangle wave
+                    short sample = (short) (volume * ((Math.acos(sinewave) / 1.5708) - 1) * 0x7FFF);
+                    samples[i] = sample;
+                    samples[i + 1] = sample;
+                    break;
+                }
+                case 3: {
 
-                //this makes a stereo triangle wave
-                short sample = (short) (volume * ((Math.acos(sinewave)/1.5708)-1) * 0x7FFF);
-                samples[i] = sample;
-                samples[i + 1] = sample;
-
-            } else if (wave == 3) {
-
-                //this makes a stereo sawtooth wave
-                short sample =(short) (volume * 2*(i%(samplingfreq * 2.0 / freq)/(samplingfreq * 2.0 / freq)-1) * 0x7FFF);
-                samples[i] = sample;
-                samples[i + 1] = sample;
-
+                    //this makes a stereo sawtooth wave
+                    short sample = (short) (volume * 2 * (i % (samplingfreq * 2.0 / freq) / (samplingfreq * 2.0 / freq) - 1) * 0x7FFF);
+                    samples[i] = sample;
+                    samples[i + 1] = sample;
+                    break;
+                }
+                default:{}
             }
 
         }
