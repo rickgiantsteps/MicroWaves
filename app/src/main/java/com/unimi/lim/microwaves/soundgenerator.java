@@ -76,7 +76,7 @@ public class soundgenerator {
                 case 2: {
 
                     //this makes a stereo triangle wave
-                    short sample = (short) (volume * ((Math.acos(sinewave) / 1.5708) - 1) * 0x7FFF);
+                    short sample = (short) (volume * ((Math.acos(sinewave) / (Math.PI/2)) - 1) * 0x7FFF);
                     samples[i] = sample;
                     samples[i + 1] = sample;
                     break;
