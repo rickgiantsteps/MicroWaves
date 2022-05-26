@@ -16,6 +16,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnTouchListener  {
 
@@ -120,7 +121,7 @@ public class BohlenPiercekeyboard extends AppCompatActivity  implements View.OnT
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             tones[tone-1] = soundgenerator.generateTone(bp[tone-1], volume, wave, this, tones, tone-1);
             tones[tone-1].play();
-            lastfreq = BigDecimal.valueOf(bp[tone - 1]).setScale(4, BigDecimal.ROUND_FLOOR) + " Hz";
+            lastfreq = BigDecimal.valueOf(bp[tone - 1]).setScale(4, RoundingMode.FLOOR) + " Hz";
             ((TextView)findViewById(R.id.lastfrequencytext)).setText(lastfreq);
         }
         if (event.getAction() == MotionEvent.ACTION_UP) {

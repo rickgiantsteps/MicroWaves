@@ -16,6 +16,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class EDO12keyboard extends AppCompatActivity implements View.OnTouchListener {
 
@@ -120,7 +121,7 @@ public class EDO12keyboard extends AppCompatActivity implements View.OnTouchList
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             tones[tone-1] = soundgenerator.generateTone(edo12[tone-1], volume, wave, this, tones, tone-1);
             tones[tone-1].play();
-            lastfreq = BigDecimal.valueOf(edo12[tone - 1]).setScale(4, BigDecimal.ROUND_FLOOR) + " Hz";
+            lastfreq = BigDecimal.valueOf(edo12[tone - 1]).setScale(4, RoundingMode.FLOOR) + " Hz";
             ((TextView)findViewById(R.id.lastfrequencytext)).setText(lastfreq);
         }
         if (event.getAction() == MotionEvent.ACTION_UP) {
