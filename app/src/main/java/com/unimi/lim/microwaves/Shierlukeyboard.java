@@ -49,7 +49,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
             buttons[i].setTextSize(13);
         }
 
-        shierlu = pitchcalculator.calculateChinese(a4, ottava);
+        shierlu = pitchcalculator.calculateChineseScale(a4, ottava);
 
         octave = findViewById(R.id.octave);
         octave.setMaxValue(10);
@@ -57,7 +57,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
         octave.setValue(4);
         octave.setOnValueChangedListener((numberPicker, i, i1) -> {
             ottava = octave.getValue();
-            shierlu = pitchcalculator.calculateChinese(a4, ottava);
+            shierlu = pitchcalculator.calculateChineseScale(a4, ottava);
         });
 
         SeekBar waveformslider = findViewById(R.id.waveformslider);
@@ -95,7 +95,7 @@ public class Shierlukeyboard extends AppCompatActivity implements View.OnTouchLi
             public void afterTextChanged(Editable s) {
                 if (!a4frequency.getText().toString().isEmpty()) {
                     a4 = Double.parseDouble(a4frequency.getText().toString());
-                    shierlu = pitchcalculator.calculateChinese(a4, ottava);
+                    shierlu = pitchcalculator.calculateChineseScale(a4, ottava);
                 }
             }
 

@@ -42,7 +42,7 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nedokeyboard);
 
-        edo = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
+        edo = pitchcalculator.calculateEqualScale(a4, ottava, edonumber);
 
         octave = findViewById(R.id.octave);
         octave.setMaxValue(10);
@@ -50,7 +50,7 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
         octave.setValue(4);
         octave.setOnValueChangedListener((numberPicker, i, i1) -> {
             ottava = octave.getValue();
-            edo = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
+            edo = pitchcalculator.calculateEqualScale(a4, ottava, edonumber);
         });
 
         SeekBar waveformslider = findViewById(R.id.waveformslider);
@@ -121,7 +121,7 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
             }
 
             edonumber = nedo.getValue();
-            edo = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
+            edo = pitchcalculator.calculateEqualScale(a4, ottava, edonumber);
         });
 
         switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {
@@ -148,7 +148,7 @@ public class nEDOkeyboard extends AppCompatActivity implements View.OnTouchListe
 
                 if (!a4frequency.getText().toString().isEmpty()) {
                     a4 = Double.parseDouble(a4frequency.getText().toString());
-                    edo = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
+                    edo = pitchcalculator.calculateEqualScale(a4, ottava, edonumber);
                 }
 
             }

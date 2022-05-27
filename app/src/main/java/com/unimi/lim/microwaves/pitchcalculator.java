@@ -2,7 +2,7 @@ package com.unimi.lim.microwaves;
 
 public class pitchcalculator {
 
-    static double[] calculateTemperateScale(double startingnote, int ottava, int subdivision) {
+    static double[] calculateEqualScale(double startingnote, int ottava, int subdivision) {
 
         double root = Math.pow(2, 1.0/subdivision);
         double[] edo = new double[subdivision];
@@ -66,12 +66,12 @@ public class pitchcalculator {
     static double[] calculatePitagora(double startingnote, int ottava) {
 
         double[] rapporti = {1, 9.0/8, 81.0/64, 4.0/3, 3.0/2, 27.0/16, 243.0/128};
-        double[] natural = new double[7];
+        double[] pitagora = new double[7];
 
 
         for (int i = 0; i < 7; i += 1) {
 
-            natural[i] = startingnote * rapporti[i];
+            pitagora[i] = startingnote * rapporti[i];
 
         }
 
@@ -79,18 +79,18 @@ public class pitchcalculator {
         if (ottava<4) {
 
             for(int i=0; i<7; i++) {
-                natural[i] = natural[i] / Math.pow(2,(4-ottava));
+                pitagora[i] = pitagora[i] / Math.pow(2,(4-ottava));
             }
 
         } else if (ottava>4) {
 
             for(int i=0; i<7; i++) {
-                natural[i] = natural[i] * Math.pow(2,(ottava-4));
+                pitagora[i] = pitagora[i] * Math.pow(2,(ottava-4));
             }
 
         }
 
-        return natural;
+        return pitagora;
 
     }
 
@@ -187,9 +187,9 @@ public class pitchcalculator {
 
     }
 
-    static double[] calculateChinese(double startingnote, int octave) {
+    static double[] calculateChineseScale(double startingnote, int ottava) {
 
-        double[] rapporti = {1, 2187.0/2048, 9.0/8, 1968.0/1630, 81.0/64, 1771.0/1311, 729.0/512, 3.0/2, 6561.0/4096, 27.0/16, 5905.0/3277, 243.0/128,};
+        double[] rapporti = {1, 2187.0/2048, 9.0/8, 1968.0/1630, 81.0/64, 1771.0/1311, 729.0/512, 3.0/2, 6561.0/4096, 27.0/16, 5905.0/3277, 243.0/128};
         double[] shierlu = new double[12];
 
 
@@ -200,16 +200,16 @@ public class pitchcalculator {
         }
 
 
-        if (octave<4) {
+        if (ottava<4) {
 
             for(int i=0; i<12; i++) {
-                shierlu[i] = shierlu[i] / Math.pow(3,(4-octave));
+                shierlu[i] = shierlu[i] / Math.pow(3,(4-ottava));
             }
 
-        } else if (octave>4) {
+        } else if (ottava>4) {
 
             for(int i=0; i<12; i++) {
-                shierlu[i] = shierlu[i] * Math.pow(3,(octave-4));
+                shierlu[i] = shierlu[i] * Math.pow(3,(ottava-4));
             }
 
         }

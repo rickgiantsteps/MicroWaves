@@ -50,7 +50,7 @@ public class EDO11keyboard extends AppCompatActivity implements View.OnTouchList
             buttons[i].setTextSize(13);
         }
 
-        edo11 = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
+        edo11 = pitchcalculator.calculateEqualScale(a4, ottava, edonumber);
 
         octave = findViewById(R.id.octave);
         octave.setMaxValue(10);
@@ -58,7 +58,7 @@ public class EDO11keyboard extends AppCompatActivity implements View.OnTouchList
         octave.setValue(4);
         octave.setOnValueChangedListener((numberPicker, i, i1) -> {
             ottava = octave.getValue();
-            edo11 = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
+            edo11 = pitchcalculator.calculateEqualScale(a4, ottava, edonumber);
         });
 
         SeekBar waveformslider = findViewById(R.id.waveformslider);
@@ -96,7 +96,7 @@ public class EDO11keyboard extends AppCompatActivity implements View.OnTouchList
             public void afterTextChanged(Editable s) {
                 if (!a4frequency.getText().toString().isEmpty()) {
                     a4 = Double.parseDouble(a4frequency.getText().toString());
-                    edo11 = pitchcalculator.calculateTemperateScale(a4, ottava, edonumber);
+                    edo11 = pitchcalculator.calculateEqualScale(a4, ottava, edonumber);
                 }
             }
 
