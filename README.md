@@ -26,7 +26,5 @@ The quantity of them depends on the tuning. They are all numbered from the lowes
 As the user presses a button, a frequency will be generated, which will then be halted when the button is released. 
 
 <br/>
-<br/>
-<br/>
 To learn more about equal temperament or unequal tuning systems, the user can read a brief introduction to temperament and microtonality in the app's theory section.
 
